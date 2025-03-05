@@ -1,4 +1,4 @@
-|Threads | Time | Multiplier | Best Obj |
+|Threads | Time | Multiplier | Best Objective |
 | - | - | - | - |
 |1|9000.37|1.00|0.06|
 |2|9000.31|1.00|0.06|

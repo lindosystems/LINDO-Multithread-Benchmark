@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # root directory for test data
-rootDir = "/home/jhaas/TEST_LINDO"
+rootDir = "TEST_LINDO"
 # set unit of time in seconds
 unit_time = 5
 # list of completed tests
@@ -49,8 +49,8 @@ for test in tests:
     status = test_df['Status'].values
 
     # if any status == 1 then print name
-    if(1 in status):
-        print(f"{test} was solved in time limit")
+    # if(1 not in status):
+    #     print(f"{test} was not solved in time limit")
 
     # compare total number of branches used to nThread=1
     branches_scale = branches/branches[0]
@@ -150,27 +150,29 @@ for test in tests:
         for t in np.arange(initTime + unit_time,max(time),unit_time):
             mask = (time <= t) & (time >= t - unit_time)
             branches_per_step_arr = branches[mask]
-            if(len(branches_per_step_arr) > 1):
-                branches_per_step = branches_per_step_arr[-1] - branches_per_step_arr[0]
-                branches_per_time.append(branches_per_step)     
-            elif(len(branches_per_step_arr) == 1):
-                branches_per_step = branches_per_step_arr[0]
-                branches_per_time.append(branches_per_step)  
-            else:
-                pass     
+            if(len(branches_per_step_arr) > 0):
+                branches_per_step = np.median(branches_per_step_arr)
+                branches_per_step_arr[-1] - branches_per_step_arr[0]
+                branches_per_time.append(branches_per_step)       
 
-        if(len(branches_per_time) == 0 ):
-            med_branches_per_time.append(np.median(branches))
-        else:
-            med_branches_per_time.append(np.median(branches_per_time))
-        
+        # loop over branches_per_time an subtract the preve
+        for i in range(1, len(branches_per_time)):
+            branches_per_time[i] = branches_per_time[i] - branches_per_time[i-1]
+
+        # if no data in branches_per_time use median of branches
+        if(len(branches_per_time) == 0):
+           branches_per_time.append(np.median(branches))
+                                    
+        med_branches_per_time.append(np.median(branches_per_time))
 
     # scale branches by the first entry
     med_branches_per_time_scale = np.array(med_branches_per_time)/med_branches_per_time[0]
-
+    
+    # plot branchs per unit of times
     branch_per_unit_png = f"{dirName}/branch_per_unit"
     plt.plot(threads,med_branches_per_time_scale, marker="o")
     plt.ylabel('Median Branches')
+    plt.xticks(threads,threads)
     plt.xlabel('Threads')
     plt.ylabel('Performance Multiplier')
     plt.title(f"{test}: Branch Multipliers vs. Number of Threads (Median branches per {unit_time}(sec))")
@@ -187,5 +189,4 @@ for test in tests:
         for i in range(0,len(threads)):
             f.write(f"|{threads[i]}|{med_branches_per_time[i]:.2f}|{med_branches_per_time_scale[i]:.2f}|{best_bound[i]:.2f}|{best_obj[i]:.2f}|")
             f.write("\n")
-
 
