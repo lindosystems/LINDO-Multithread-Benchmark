@@ -1,0 +1,12 @@
+#PBS -N neos-3083819-nubu_1_2_4_8
+#PBS -j oe
+#PBS -l select=1:ncpus=2:mpiprocs=2:mem=128gb
+#PBS -l walltime=10:10:00
+-Run 1
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/neos-3083819-nubu.mps -nthreads 1 -tlim 9000 >> /home/jhaas/TEST_LINDO/neos-3083819-nubu/neos-3083819-nubu_1.log
+-Run 2
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/neos-3083819-nubu.mps -nthreads 2 -tlim 9000 >> /home/jhaas/TEST_LINDO/neos-3083819-nubu/neos-3083819-nubu_2.log
+-Run 4
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/neos-3083819-nubu.mps -nthreads 4 -tlim 9000 >> /home/jhaas/TEST_LINDO/neos-3083819-nubu/neos-3083819-nubu_4.log
+-Run 8
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/neos-3083819-nubu.mps -nthreads 8 -tlim 9000 >> /home/jhaas/TEST_LINDO/neos-3083819-nubu/neos-3083819-nubu_8.log

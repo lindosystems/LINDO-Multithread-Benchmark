@@ -1,0 +1,10 @@
+#PBS -N nu25-pr12_16_32_64
+#PBS -j oe
+#PBS -l select=1:ncpus=2:mpiprocs=2:mem=256gb
+#PBS -l walltime=08:10:00
+echo -Run 16
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/nu25-pr12.mps -nthreads 16 -tlim 9000
+echo -Run 32
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/nu25-pr12.mps -nthreads 32 -tlim 9000
+echo -Run 64
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/nu25-pr12.mps -nthreads 64 -tlim 9000

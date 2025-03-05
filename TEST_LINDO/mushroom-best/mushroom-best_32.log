@@ -1,0 +1,181 @@
+
+LINDO API Version 15.0.6099.199 built on Oct 29 2024 22:01:27
+Barrier Solver Version 0.0.000, Nonlinear Solver Version 3.17N
+Platform Linux 64x86 (D)
+
+Copyright (c) 2024 by LINDO Systems, Inc. Licensed material,
+all rights reserved. Copying except as authorized in license 
+agreement is prohibited.
+
+Number of users allowed=1   
+No expiration date
+Jhaas@lindo.com 
+
+Reading model parameters from /home/jhaas/TEST_LINDO/mushroom-best.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading model parameters from lindo.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading /home/jhaas/TEST_LINDO/mushroom-best.mps in MPS format (unformatted)
+Processed 222382 lines in MPS format (0.14 secs).
+
+Number of constraints:    8580    le:       0, ge:    8576, eq:       4, rn:       0 (ne:0)
+Number of variables  :    8468    lb:       0, ub:       0, fr:       0, bx:    8468 (fx:0)
+Number of nonzeroes  :  188735    density: 2.6e-05(%)     , sb:       0, dir:min
+
+Abs. Ranges     :         Min.          Max.    Condition.
+Matrix Coef. (A):      1.00000     310.00105     310.00105 
+Obj. Vector  (c):   3.2092e-06       1.00000    3.1160e+05 
+RHS Vector   (b):      0.00100       0.00100       1.00000 
+Lower Bounds (l):     10.00000     100.00000      10.00000 
+Upper Bounds (u):      1.00000    8124.00000    8124.00000 
+BadScale Measure: 0
+
+Binary variables     :    8237 (in 8353 constraints)
+Integer variables    :     118 (in 8580 constraints)
+
+Minimizing the MILP objective...
+
+cmdline Option MODEL maximum number of threads to run the solver called : 32
+Ori. size (m, n, nz,  nip):   8580,   8468,   188735,    8355
+FOUND MIP solution in presolve   Objvalue  : 8.124000e+03  (*P)
+Infeasibility of solution: 0.0e+00
+Integer infeasibility of solution: 0.0e+00
+
+
+New  size (m, n, nz,  nip):   8444,   8420,   180228,    8351
+
+Time Consumed in probing: 10.12 (sec.)
+
+
+Initial continuous objective: 0.012683
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+        0      0        1   1.268293e-02   7.899872e-02 6.6e-02  10.55  (*SRH) 
+                        5    (1.6e+00)     7.899872e-02 6.6e-02  10.81  0.60  
+        0      0        8   1.268293e-02   6.322208e-02 5.1e-02  11.04  (*SRH) 
+        0      0       11   1.268293e-02   6.321566e-02 5.1e-02  11.17  (*SRH) 
+                       17    (1.2e+00)     6.321566e-02 5.1e-02  11.46  1.22  
+        0      0       20   1.268293e-02   5.533376e-02 4.3e-02  11.72  (*SRH) 
+      673     30      698   1.268293e-02   5.533376e-02 4.3e-02  276.54  2.07 (-) 
+C(   1) (     4)      700   1.268293e-02   5.533376e-02 4.3e-02  280.45  2.11  
+C(   2) (     5)      701   1.270935e-02   5.533376e-02 4.3e-02  280.61  2.20  
+C(   3) (     9)      702   1.270935e-02   5.533376e-02 4.3e-02  281.84  2.22  
+C(   4) (    13)      703   1.270935e-02   5.533376e-02 4.3e-02  283.06  2.23  
+C(   5) (    14)      704   1.296037e-02   5.533376e-02 4.2e-02  283.20  2.37  
+C(   6) (    14)      706   1.296037e-02   5.533376e-02 4.2e-02  284.66  2.40  
+C(   7) (    15)      707   1.310050e-02   5.533376e-02 4.2e-02  285.00  2.48  
+C(   8) (    16)      708   1.323795e-02   5.533376e-02 4.2e-02  286.35  2.54  
+C(   9) (     9)      710   1.323795e-02   5.533376e-02 4.2e-02  288.48  2.57  
+C(  10) (    10)      711   1.325625e-02   5.533376e-02 4.2e-02  288.55  2.61  
+C(  11) (     9)      713   1.325625e-02   5.533376e-02 4.2e-02  289.76  2.64  
+C(  12) (    10)      714   1.327267e-02   5.533376e-02 4.2e-02  289.86  2.70  
+C(  13) (    11)      716   1.327267e-02   5.533376e-02 4.2e-02  291.30  2.72  
+C(  14) (    12)      718   1.327267e-02   5.533376e-02 4.2e-02  292.48  2.75  
+C(  15) (    13)      720   1.327267e-02   5.533376e-02 4.2e-02  293.66  2.77  
+C(  16) (    14)      722   1.327267e-02   5.533376e-02 4.2e-02  294.83  2.79  
+C(  17) (    15)      724   1.327267e-02   5.533376e-02 4.2e-02  296.01  2.81  
+C(  18) (    16)      726   1.327267e-02   5.533376e-02 4.2e-02  297.19  2.83  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+C(  19) (    17)     1030   1.327267e-02   5.533376e-02 4.2e-02  299.48  3.08  
+C(  20) (    18)     1031   1.327267e-02   5.533376e-02 4.2e-02  300.65  3.09  
+C(  21) (    19)     1033   1.327267e-02   5.533376e-02 4.2e-02  301.84  3.12  
+C(  22) (    20)     1034   1.327267e-02   5.533376e-02 4.2e-02  303.01  3.13  
+C(  23) (    21)     1036   1.327267e-02   5.533376e-02 4.2e-02  304.19  3.15  
+C(  24) (    22)     1037   1.327267e-02   5.533376e-02 4.2e-02  305.37  3.17  
+
+C(  25) (     7)     1040   1.327267e-02   5.533376e-02 4.2e-02  307.08  4.05  
+      800      6     1054   1.327267e-02   5.533376e-02 4.2e-02  307.16  4.07 (-) 
+     1037      0     1267   1.327267e-02   5.533376e-02 4.2e-02  307.25  4.14 (-) 
+C(  26) (     9)     1272   1.798509e-02   5.533376e-02 3.7e-02  308.02  4.45  
+C(  27) (    11)     1273   1.818365e-02   5.533376e-02 3.7e-02  308.20  4.53  
+C(  28) (    12)     1275   1.829616e-02   5.533376e-02 3.7e-02  308.78  4.62  
+C(  29) (    13)     1276   1.832160e-02   5.533376e-02 3.7e-02  309.00  4.65  
+C(  30) (    14)     1277   1.832657e-02   5.533376e-02 3.7e-02  309.65  4.67  
+C(  31) (    16)     1279   1.838896e-02   5.533376e-02 3.7e-02  310.21  4.81  
+C(  32) (    19)     1281   1.841794e-02   5.533376e-02 3.7e-02  311.05  5.01  
+C(  33) (    21)     1282   1.841978e-02   5.533376e-02 3.7e-02  311.22  5.04  
+C(  34) (    23)     1285   1.843103e-02   5.533376e-02 3.7e-02  312.15  5.26  
+C(  35) (    24)     1287   1.843103e-02   5.533376e-02 3.7e-02  312.95  5.29  
+C(  36) (    25)     1289   1.843103e-02   5.533376e-02 3.7e-02  313.75  5.33  
+C(  37) (    26)     1291   1.843103e-02   5.533376e-02 3.7e-02  314.54  5.37  
+C(  38) (    27)     1293   1.843103e-02   5.533376e-02 3.7e-02  314.81  5.40  
+C(  39) (    27)     1299   1.843103e-02   5.533376e-02 3.7e-02  315.36  5.46  
+C(  40) (    26)     1302   1.845214e-02   5.533376e-02 3.7e-02  316.04  5.71  
+C(  41) (    27)     1304   1.845614e-02   5.533376e-02 3.7e-02  316.86  5.81  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+C(  42) (    28)     1306   1.847201e-02   5.533376e-02 3.7e-02  317.10  5.99  
+C(  43) (    29)     1307   1.847201e-02   5.533376e-02 3.7e-02  317.25  6.00  
+C(  44) (    31)     1309   1.849445e-02   5.533376e-02 3.7e-02  317.59  6.20  
+C(  45) (    33)     1311   1.851508e-02   5.533376e-02 3.7e-02  317.93  6.40  
+C(  46) (    34)     1312   1.851548e-02   5.533376e-02 3.7e-02  318.04  6.43  
+C(  47) (    35)     1314   1.852033e-02   5.533376e-02 3.7e-02  318.25  6.49  
+C(  48) (    34)     1317   1.852999e-02   5.533376e-02 3.7e-02  318.52  6.61  
+C(  49) (    34)     1320   1.856682e-02   5.533376e-02 3.7e-02  319.09  6.97  
+
+C(  50) (    35)     1325   1.865179e-02   5.533376e-02 3.7e-02  320.30  7.10  
+C(  51) (    36)     1326   1.865179e-02   5.533376e-02 3.7e-02  320.33  7.12  
+C(  52) (    39)     1328   1.865179e-02   5.533376e-02 3.7e-02  320.53  7.15  
+Increase node pool size from =16000 to 32000 
+
+
+Increase node pool size from =16000 to 32000 
+
+
+Increase node pool size from =16000 to 32000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+    30074      0    79080   4.745186e-02   5.533376e-02 7.9e-03  3004.94  2127.09  
+    30074      0    79080   5.533376e-02   5.533376e-02 0.0e+00  3004.97  2127.09  
+
+Parallel MIP workload: 95565.82 secs
+    0   1   2   3   4   5   6   7   8   9 
+0:|12%|12%|8%|1%|4%|1%|1%|1%|1%|1%|
+1:|1%|1%|2%|1%|2%|1%|9%|2%|7%|7%|
+2:|8%|6%|1%|1%|1%|5%|1%|1%|0%|0%|
+3:|0%|0%|
+
+Optimum found
+
+Status                       :                      1
+Objective Value              :        0.0553337612323
+Best Bound                   :        0.0553337612323
+Rel. MIP Gap                 :           0.000000e+00
+Abs. MIP Gap                 :           0.000000e+00
+
+Primal Infeasibility         :           0.000000e+00
+Integer Infeasibility        :           0.000000e+00
+
+Total Branches               :                  30074
+Total LPs Solved             :                  79080
+Simplex Iterations           :               14729260
+Barrier Iterations           :                   6181
+Nonlinear Iterations         :                      0
+Cutting planes applied       :                    596 (596)
+    + Flow Covers            :                      3
+    + Disaggregation         :                      4
+    + Gomory                 :                    495
+    + Coeff. Reduction       :                     93
+    + Contra                 :                      1
+Total Time (sec.)            :                3004.97
+ 
+
+
+Elapsed time : 3005.00 seconds
+
+
+

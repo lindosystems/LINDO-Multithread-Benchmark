@@ -1,0 +1,3796 @@
+
+LINDO API Version 15.0.6099.199 built on Oct 29 2024 22:01:27
+Barrier Solver Version 0.0.000, Nonlinear Solver Version 3.17N
+Platform Linux 64x86 (D)
+
+Copyright (c) 2024 by LINDO Systems, Inc. Licensed material,
+all rights reserved. Copying except as authorized in license 
+agreement is prohibited.
+
+Number of users allowed=1   
+No expiration date
+Jhaas@lindo.com 
+
+Reading model parameters from /home/jhaas/TEST_LINDO/neos-3627168-kasai.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading model parameters from lindo.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading /home/jhaas/TEST_LINDO/neos-3627168-kasai.mps in MPS format (unformatted)
+Processed 8284 lines in MPS format (0.00 secs).
+
+Number of constraints:    1655    le:    1190, ge:       0, eq:     465, rn:       0 (ne:0)
+Number of variables  :    1462    lb:     997, ub:       0, fr:       3, bx:     462 (fx:0)
+Number of nonzeroes  :    5158    density: 2.1e-05(%)     , sb:       3, dir:min
+
+Abs. Ranges     :         Min.          Max.    Condition.
+Matrix Coef. (A):      1.00000   25000.00000   25000.00000 
+Obj. Vector  (c):      1.00000       1.00000       1.00000 
+RHS Vector   (b):      2.00000    4500.00000    2250.00000 
+Lower Bounds (l):  1.0000e-100   1.0000e-100       1.00000 
+Upper Bounds (u):      1.00000       1.00000       1.00000 
+BadScale Measure: 0
+
+Binary variables     :     462 (in 533 constraints)
+Integer variables    :      73 (in 197 constraints)
+
+Minimizing the MILP objective...
+
+cmdline Option MODEL maximum number of threads to run the solver called : 64
+Ori. size (m, n, nz,  nip):   1655,   1462,     5158,     535
+New  size (m, n, nz,  nip):   1561,   1400,     4067,     476
+
+Time Consumed in probing: 0.04 (sec.)
+
+
+Initial continuous objective: 954341.026667
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+        6      0       87   9.543410e+05   9.955526e+05 4.1e-02  0.21  (*SRH-) 
+                       91    (4.2e+01)     9.955526e+05 4.1e-02  0.21  0.13 (-) 
+        6      0       95   9.543410e+05   9.947870e+05 4.1e-02  0.22  (*SRH-) 
+        6      0       96   9.543410e+05   9.936186e+05 4.0e-02  0.22  (*SRH-) 
+        6      0       98   9.543410e+05   9.933686e+05 3.9e-02  0.22  (*SRH-) 
+                      101    (8.5e-01)     9.933686e+05 3.9e-02  0.22  0.15 (-) 
+        6      0      104   9.543410e+05   9.933026e+05 3.9e-02  0.23  (*SRH-) 
+                      111    (4.1e-01)     9.933026e+05 3.9e-02  0.24  0.16 (-) 
+        6      0      116   9.543410e+05   9.930526e+05 3.9e-02  0.24  (*SRH-) 
+        6      0      117   9.543410e+05   9.928026e+05 3.9e-02  0.24  (*SRH-) 
+        6      0      118   9.543410e+05   9.925526e+05 3.8e-02  0.24  (*SRH-) 
+        6      0      119   9.543410e+05   9.923026e+05 3.8e-02  0.24  (*SRH-) 
+        6      0      121   9.543410e+05   9.920526e+05 3.8e-02  0.25  (*SRH-) 
+        6      0      122   9.543410e+05   9.918026e+05 3.8e-02  0.25  (*SRH-) 
+        6      0      123   9.543410e+05   9.915526e+05 3.8e-02  0.25  (*SRH-) 
+        6      0      124   9.543410e+05   9.913026e+05 3.7e-02  0.25  (*SRH-) 
+        6      0      126   9.543410e+05   9.910526e+05 3.7e-02  0.25  (*SRH-) 
+        6      0      127   9.543410e+05   9.908026e+05 3.7e-02  0.25  (*SRH-) 
+       45      9      687   9.543410e+05   9.905540e+05 3.7e-02  0.50  (*SRH-) 
+       57     14      715   9.543410e+05   9.905526e+05 3.7e-02  0.52  (*SRH-) 
+    21699  17530    24901   9.543410e+05   9.905526e+05 3.7e-02  5.87  5.07 (-) 
+    21726      1    25387   9.543410e+05   9.905526e+05 3.7e-02  6.07  (*H-) 
+    21726      1    25387   9.543410e+05   9.905526e+05 3.7e-02  6.07  (*H-) 
+    21800     49    25464   9.543410e+05   9.905526e+05 3.7e-02  6.21  5.21 (-) 
+    21895    126    25555   9.543410e+05   9.905526e+05 3.7e-02  6.30  5.26 (-) 
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+    22012    183    25664   9.543410e+05   9.905526e+05 3.7e-02  6.34  5.30 (-) 
+    22156    293    25808   9.543410e+05   9.905526e+05 3.7e-02  6.40  5.36 (-) 
+    22257    373    25909   9.543410e+05   9.905526e+05 3.7e-02  6.44  5.39 (-) 
+    22744    761    26392   9.543410e+05   9.905526e+05 3.7e-02  6.61  5.55 (-) 
+    22989    946    26635   9.543410e+05   9.905526e+05 3.7e-02  6.70  5.63 (-) 
+    23269   1165    26913   9.543410e+05   9.905526e+05 3.7e-02  6.79  5.72 (-) 
+    24345   1927    27981   9.543410e+05   9.905526e+05 3.7e-02  7.14  6.06 (-) 
+    26691   3679    30326   9.543410e+05   9.905526e+05 3.7e-02  7.91  6.81 (-) 
+    27150   4029    30785   9.543410e+05   9.905526e+05 3.7e-02  8.07  6.96 (-) 
+    31551   7106    35185   9.543410e+05   9.905526e+05 3.7e-02  9.48  8.36 (-) 
+    32578   7796    36212   9.543410e+05   9.905526e+05 3.7e-02  9.80  8.66 (-) 
+    52053  19155    55670   9.543410e+05   9.905526e+05 3.7e-02  15.44  14.21 (-) 
+    54309  20291    57925   9.543410e+05   9.905526e+05 3.7e-02  16.04  14.79 (-) 
+    54788  20539    58404   9.543410e+05   9.905526e+05 3.7e-02  16.17  14.91 (-) 
+    57427  21975    61042   9.543410e+05   9.905526e+05 3.7e-02  16.88  15.61 (-) 
+    59439  23115    63054   9.543410e+05   9.905526e+05 3.7e-02  17.43  16.14 (-) 
+    63908  25663    67521   9.543410e+05   9.905526e+05 3.7e-02  18.64  17.33 (-) 
+    65305  26515    68918   9.543410e+05   9.905526e+05 3.7e-02  19.02  17.70 (-) 
+    89251  40354    92847   9.543410e+05   9.905526e+05 3.7e-02  25.72  24.28 (-) 
+    97447  45049   101040   9.543410e+05   9.905526e+05 3.7e-02  27.99  26.51 (-) 
+   102981  48327   106570   9.543410e+05   9.905526e+05 3.7e-02  29.49  27.98 (-) 
+   113121  54467   116707   9.543410e+05   9.905526e+05 3.7e-02  32.14  30.58 (-) 
+   119611  58397   123194   9.543410e+05   9.905526e+05 3.7e-02  33.79  32.19 (-) 
+   126933  62988   130513   9.543410e+05   9.905526e+05 3.7e-02  35.60  33.96 (-) 
+   140355  71758   143930   9.543410e+05   9.905526e+05 3.7e-02  38.89  37.18 (-) 
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+                   143934    (4.5e+01)     9.905526e+05 3.7e-02  38.90  37.19  
+                   143944    (1.2e+00)     9.905526e+05 3.7e-02  38.95  37.24  
+C(   1) (   406)   143959   9.562527e+05   9.905526e+05 3.5e-02  39.03  37.29  
+C(   2) (   488)   143961   9.570709e+05   9.905526e+05 3.4e-02  39.09  37.32  
+C(   3) (   556)   143964   9.572493e+05   9.905526e+05 3.4e-02  39.15  37.36  
+C(   4) (   639)   143966   9.575090e+05   9.905526e+05 3.3e-02  39.24  37.42  
+C(   5) (   682)   143968   9.577276e+05   9.905526e+05 3.3e-02  39.29  37.46  
+C(   6) (   737)   143970   9.579170e+05   9.905526e+05 3.3e-02  39.39  37.51  
+C(   7) (   794)   143972   9.580993e+05   9.905526e+05 3.3e-02  39.49  37.58  
+C(   8) (   829)   143974   9.583178e+05   9.905526e+05 3.3e-02  39.58  37.64  
+C(   9) (   863)   143976   9.589004e+05   9.905526e+05 3.2e-02  39.73  37.75  
+C(  10) (   897)   143978   9.593333e+05   9.905526e+05 3.2e-02  39.85  37.84  
+C(  11) (   929)   143980   9.597881e+05   9.905526e+05 3.1e-02  39.95  37.92  
+C(  12) (   977)   143984   9.599951e+05   9.905526e+05 3.1e-02  40.06  38.01  
+C(  13) (  1008)   143987   9.600664e+05   9.905526e+05 3.1e-02  40.14  38.06  
+C(  14) (  1020)   143991   9.601721e+05   9.905526e+05 3.1e-02  40.22  38.11  
+C(  15) (  1044)   143997   9.602702e+05   9.905526e+05 3.1e-02  40.32  38.18  
+C(  16) (  1074)   144001   9.604230e+05   9.905526e+05 3.0e-02  40.40  38.24  
+C(  17) (  1099)   144005   9.606233e+05   9.905526e+05 3.0e-02  40.48  38.30  
+C(  18) (  1122)   144010   9.607843e+05   9.905526e+05 3.0e-02  40.59  38.38  
+C(  19) (  1139)   144013   9.609710e+05   9.905526e+05 3.0e-02  40.67  38.43  
+C(  20) (  1160)   144017   9.611196e+05   9.905526e+05 3.0e-02  40.78  38.51  
+C(  21) (  1184)   144021   9.613913e+05   9.905526e+05 2.9e-02  40.94  38.64  
+C(  22) (  1175)   144025   9.616266e+05   9.905526e+05 2.9e-02  41.06  38.71  
+C(  23) (  1195)   144029   9.617131e+05   9.905526e+05 2.9e-02  41.17  38.78  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+C(  24) (  1210)   144034   9.617284e+05   9.905526e+05 2.9e-02  41.24  38.82  
+C(  25) (  1223)   144037   9.617670e+05   9.905526e+05 2.9e-02  41.35  38.88  
+C(  26) (  1238)   144041   9.618149e+05   9.905526e+05 2.9e-02  41.48  38.96  
+C(  27) (  1247)   144044   9.618822e+05   9.905526e+05 2.9e-02  41.58  39.01  
+C(  28) (  1271)   144051   9.621502e+05   9.905526e+05 2.9e-02  41.79  39.17  
+C(  29) (  1289)   144055   9.623103e+05   9.905526e+05 2.9e-02  41.92  39.27  
+C(  30) (  1302)   144059   9.625015e+05   9.905526e+05 2.8e-02  42.04  39.35  
+C(  31) (  1319)   144063   9.626087e+05   9.905526e+05 2.8e-02  42.15  39.42  
+C(  32) (  1328)   144067   9.627429e+05   9.905526e+05 2.8e-02  42.27  39.49  
+C(  33) (  1329)   144069   9.627491e+05   9.905526e+05 2.8e-02  42.29  39.50  
+C(  34) (  1309)   144073   9.627562e+05   9.905526e+05 2.8e-02  42.38  39.52  
+C(  35) (  1314)   144077   9.627887e+05   9.905526e+05 2.8e-02  42.46  39.56  
+C(  36) (  1312)   144080   9.628230e+05   9.905526e+05 2.8e-02  42.53  39.58  
+C(  37) (  1325)   144084   9.628769e+05   9.905526e+05 2.8e-02  42.62  39.62  
+C(  38) (  1330)   144087   9.629023e+05   9.905526e+05 2.8e-02  42.71  39.65  
+C(  39) (  1331)   144093   9.629085e+05   9.905526e+05 2.8e-02  42.80  39.69  
+C(  40) (  1332)   144095   9.629264e+05   9.905526e+05 2.8e-02  42.85  39.70  
+C(  41) (  1326)   144097   9.629331e+05   9.905526e+05 2.8e-02  42.93  39.72  
+C(  42) (  1333)   144101   9.629365e+05   9.905526e+05 2.8e-02  43.00  39.74  
+
+   140355      1   144109   9.629365e+05   9.905526e+05 2.8e-02  43.48  (*H)  
+   140355      1   144109   9.629365e+05   9.905526e+05 2.8e-02  43.48  (*H)  
+   140400     22   144174   9.659758e+05   9.905526e+05 2.5e-02  47.75  44.11  
+   140512     99   144307   9.682224e+05   9.905526e+05 2.3e-02  49.18  45.46  
+   140938    368   144747   9.682821e+05   9.905526e+05 2.2e-02  49.48  45.58  
+   142957   1957   146802   9.682821e+05   9.905526e+05 2.2e-02  50.03  45.96  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+   144685   3213   148548   9.682821e+05   9.905526e+05 2.2e-02  50.30  46.21  
+   175251  18819   179622   9.745654e+05   9.902310e+05 1.6e-02  54.94  50.80  
+   188220  25722   192776   9.766599e+05   9.902310e+05 1.4e-02  56.92  52.69  
+   201929  33692   206701   9.768492e+05   9.902310e+05 1.4e-02  59.04  54.63  
+   207748  37219   212606   9.785551e+05   9.902310e+05 1.2e-02  59.88  55.43  
+   218181  43573   223183   9.788187e+05   9.902310e+05 1.2e-02  61.43  56.94  
+   235233  54329   240453   9.796764e+05   9.902310e+05 1.1e-02  63.94  59.38  
+   250774  64118   256159   9.796996e+05   9.902310e+05 1.1e-02  66.20  61.58  
+   252497  65231   257897   9.797001e+05   9.902310e+05 1.1e-02  66.46  61.83  
+   300492  97521   306390   9.797890e+05   9.902310e+05 1.1e-02  73.26  68.46  
+   346923 127319   353241   9.799062e+05   9.900988e+05 1.0e-02  79.77  74.80  
+   361786 135529   368216   9.799231e+05   9.900988e+05 1.0e-02  81.86  76.77  
+   406600 165442   413692   9.799898e+05   9.900988e+05 1.0e-02  88.18  82.96  
+Increase bin node pool size from =32000 to 64000 
+
+
+   455066 198377   462560   9.800486e+05   9.900988e+05 1.0e-02  95.10  89.75  
+   501214 229742   509172   9.801192e+05   9.900988e+05 1.0e-02  101.79  96.28  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+   548274 261799   556730   9.801421e+05   9.900988e+05 1.0e-02  108.63  102.98  
+   590783 289446   600208   9.801737e+05   9.900988e+05 1.0e-02  114.89  109.10  
+   634799 317713   645361   9.801814e+05   9.900988e+05 1.0e-02  121.30  115.37  
+   657395 332233   668352   9.802000e+05   9.900988e+05 1.0e-02  124.57  118.55  
+   706913 365083   719116   9.802036e+05   9.895638e+05 9.5e-03  131.65  125.49  
+   707479 345178   719691   9.802212e+05   9.895638e+05 9.4e-03  131.75  125.57  
+   755915 377149   768888   9.802446e+05   9.895638e+05 9.4e-03  138.59  132.26  
+Increase bin node pool size from =32000 to 64000 
+
+
+   808730 412053   822607   9.802446e+05   9.895638e+05 9.4e-03  146.10  139.63  
+Increase bin node pool size from =32000 to 64000 
+
+
+   835250 429677   849926   9.802683e+05   9.895638e+05 9.4e-03  149.92  143.36  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+   885267 463931   901217   9.802958e+05   9.895638e+05 9.4e-03  157.17  150.45  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+   934831 497206   954491   9.803155e+05   9.895638e+05 9.3e-03  164.26  157.40  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+   984599 529266  1007880   9.803533e+05   9.895638e+05 9.3e-03  171.39  164.37  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  1037739 562779  1064749   9.803653e+05   9.895348e+05 9.3e-03  179.03  171.83  
+  1088039 591367  1116749   9.803886e+05   9.895348e+05 9.2e-03  186.17  178.81  
+  1138047 621454  1168992   9.803936e+05   9.895348e+05 9.2e-03  193.10  185.57  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  1189991 651376  1222863   9.804116e+05   9.895348e+05 9.2e-03  200.31  192.60  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  1243206 680574  1277284   9.804317e+05   9.895348e+05 9.2e-03  207.74  199.87  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  1295280 708634  1332350   9.804317e+05   9.895348e+05 9.2e-03  215.05  206.98  
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  1346246 735798  1388177   9.804317e+05   9.895348e+05 9.2e-03  222.17  213.94  
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  1396379 762730  1441208   9.804317e+05   9.895348e+05 9.2e-03  229.19  220.82  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  1447648 789923  1495715   9.804317e+05   9.895348e+05 9.2e-03  236.58  227.85  
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  1497938 816062  1547806   9.804317e+05   9.895348e+05 9.2e-03  243.64  234.74  
+  1502939 818730  1552917   9.804317e+05   9.895348e+05 9.2e-03  244.37  235.44  
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  1562456 851072  1614338   9.804317e+05   9.895348e+05 9.2e-03  252.93  243.77  
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  1621049 883224  1676954   9.804422e+05   9.895348e+05 9.2e-03  261.30  251.96  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  1676807 912745  1735681   9.804562e+05   9.895348e+05 9.2e-03  269.07  259.55  
+Increase bin node pool size from =64000 to 128000 
+
+
+  1710507 928780  1771395   9.804575e+05   9.895348e+05 9.2e-03  273.78  264.15  
+  1722021 934522  1783890   9.804640e+05   9.895348e+05 9.2e-03  275.42  265.70  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  1775973 959533  1839735   9.804751e+05   9.895348e+05 9.2e-03  282.86  272.99  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  1831209 982197  1898897   9.804806e+05   9.895348e+05 9.1e-03  290.54  280.42  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  1883747 1000571  1954189   9.804982e+05   9.895348e+05 9.1e-03  297.70  287.44  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  1938130 1015543  2011360   9.804988e+05   9.895348e+05 9.1e-03  305.19  294.76  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  1991720 1030359  2067118   9.804988e+05   9.895348e+05 9.1e-03  312.46  301.90  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  2044397 1045590  2122298   9.804988e+05   9.895348e+05 9.1e-03  319.73  309.06  
+  2050091 1047165  2128440   9.804988e+05   9.895348e+05 9.1e-03  320.55  309.84  
+Increase node pool size from =32000 to 64000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  2103522 1061239  2183834   9.804988e+05   9.895348e+05 9.1e-03  327.97  317.12  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  2159080 1076436  2241697   9.804988e+05   9.895348e+05 9.1e-03  335.69  324.72  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  2215863 1094679  2299616   9.804991e+05   9.895348e+05 9.1e-03  343.63  332.55  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  2275294 1115771  2360849   9.805154e+05   9.895348e+05 9.1e-03  351.94  340.75  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  2335099 1134671  2424111   9.805203e+05   9.895348e+05 9.1e-03  360.32  349.01  
+Increase bin node pool size from =32000 to 64000 
+
+
+  2341163 1136796  2430314   9.805252e+05   9.895348e+05 9.1e-03  361.20  349.85  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  2399382 1155504  2490838   9.805288e+05   9.895348e+05 9.1e-03  369.42  357.95  
+  2405713 1157477  2497297   9.805324e+05   9.895348e+05 9.1e-03  370.35  358.83  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  2463823 1176844  2557060   9.805324e+05   9.895348e+05 9.1e-03  378.63  364.26  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  2524307 1195831  2619678   9.805324e+05   9.895348e+05 9.1e-03  387.19  372.54  
+Increase node pool size from =32000 to 64000 
+
+
+  2582702 1212002  2680735   9.805324e+05   9.895348e+05 9.1e-03  395.46  380.53  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  2635625 1226726  2735796   9.805324e+05   9.895348e+05 9.1e-03  403.01  387.82  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  2690378 1241154  2792539   9.805324e+05   9.895348e+05 9.1e-03  410.86  395.44  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  2921372 1312226  3033047   9.805853e+05   9.895348e+05 9.0e-03  443.43  427.32  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  3562107 1494541  3695043   9.806363e+05   9.895348e+05 9.0e-03  533.04  513.91  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  3620552 1512208  3755561   9.806363e+05   9.895348e+05 9.0e-03  541.16  521.74  
+  3622793 1512856  3758201   9.806363e+05   9.895348e+05 9.0e-03  541.52  522.04  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  3672285 1529304  3810041   9.806363e+05   9.895348e+05 9.0e-03  548.51  528.78  
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  3723677 1542615  3864113   9.806363e+05   9.895348e+05 9.0e-03  555.82  535.71  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  3774549 1555066  3916398   9.806400e+05   9.895348e+05 9.0e-03  563.00  542.62  
+Increase node pool size from =32000 to 64000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+  3826274 1568653  3970408   9.806519e+05   9.895348e+05 9.0e-03  570.26  549.69  
+Increase node pool size from =64000 to 128000 
+
+
+  3877606 1580585  4023642   9.806521e+05   9.895348e+05 9.0e-03  577.47  556.70  
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  3929138 1593055  4076781   9.806702e+05   9.895348e+05 9.0e-03  584.73  563.74  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+  3978048 1606739  4127221   9.806709e+05   9.895348e+05 9.0e-03  591.65  570.45  
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  4028797 1623592  4180076   9.806792e+05   9.895348e+05 8.9e-03  598.81  577.40  
+Increase bin node pool size from =64000 to 128000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  4078922 1640801  4231682   9.806792e+05   9.895348e+05 8.9e-03  605.97  584.34  
+Increase node pool size from =64000 to 128000 
+
+
+  4096015 1646495  4249505   9.806792e+05   9.895348e+05 8.9e-03  608.45  586.72  
+Increase bin node pool size from =128000 to 256000 
+
+
+  4146836 1663718  4303192   9.806792e+05   9.887736e+05 8.2e-03  615.78  593.81  
+  4197466 930734  4354566   9.806792e+05   9.887736e+05 8.2e-03  623.26  600.74  
+  4239072 923719  4397009   9.806792e+05   9.887736e+05 8.2e-03  629.50  606.59  
+  4275767 917735  4434317   9.806792e+05   9.887736e+05 8.2e-03  634.81  611.75  
+  4310125 913035  4469268   9.806830e+05   9.887736e+05 8.2e-03  639.84  616.63  
+Increase bin node pool size from =64000 to 128000 
+
+
+  4361418 905581  4521736   9.806831e+05   9.887736e+05 8.2e-03  647.37  623.97  
+Increase bin node pool size from =64000 to 128000 
+
+
+  4408329 896711  4569507   9.806954e+05   9.887736e+05 8.2e-03  654.20  630.65  
+Increase bin node pool size from =64000 to 128000 
+
+
+  4454308 888085  4616561   9.806960e+05   9.887736e+05 8.2e-03  660.82  637.09  
+Increase bin node pool size from =64000 to 128000 
+
+
+  4502838 879496  4665909   9.807011e+05   9.887736e+05 8.2e-03  667.81  643.93  
+  4526043 875591  4689607   9.807086e+05   9.887736e+05 8.2e-03  671.18  647.21  
+  4555531 871770  4719759   9.807110e+05   9.887736e+05 8.2e-03  675.44  651.34  
+  4607269 866097  4772970   9.807122e+05   9.887736e+05 8.2e-03  682.86  658.54  
+  4664119 859778  4831419   9.807122e+05   9.887736e+05 8.2e-03  691.05  666.53  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  4714329 853746  4882651   9.807122e+05   9.887736e+05 8.2e-03  698.37  673.68  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  4772335 849159  4941902   9.807122e+05   9.887736e+05 8.2e-03  706.84  681.91  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  4820989 847620  4991988   9.807122e+05   9.887736e+05 8.2e-03  714.06  688.96  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  4840434 847610  5011933   9.807122e+05   9.887736e+05 8.2e-03  716.98  691.78  
+Increase bin node pool size from =64000 to 128000 
+
+
+  4862741 847688  5034864   9.807122e+05   9.887736e+05 8.2e-03  720.36  695.04  
+  4872376 847832  5044769   9.807122e+05   9.887736e+05 8.2e-03  721.86  696.46  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  4926623 851127  5100445   9.807122e+05   9.887736e+05 8.2e-03  730.11  704.52  
+  4954912 852797  5129477   9.807231e+05   9.887736e+05 8.1e-03  734.38  708.69  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  4987944 855390  5164269   9.807340e+05   9.887736e+05 8.1e-03  739.35  713.52  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  5028537 858588  5206428   9.807381e+05   9.887736e+05 8.1e-03  745.33  719.29  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  5073356 864256  5252599   9.807488e+05   9.887736e+05 8.1e-03  751.84  725.61  
+  5093030 867181  5272845   9.807553e+05   9.887736e+05 8.1e-03  754.70  728.36  
+Increase bin node pool size from =256000 to 512000 
+
+
+  5121060 871142  5302288   9.807600e+05   9.887736e+05 8.1e-03  758.76  732.26  
+  5172017 878714  5355476   9.807728e+05   9.887736e+05 8.1e-03  766.12  739.40  
+  5204047 883071  5388619   9.807728e+05   9.887736e+05 8.1e-03  770.80  743.95  
+Increase bin node pool size from =256000 to 512000 
+
+
+  5256958 889839  5444401   9.807728e+05   9.887472e+05 8.1e-03  778.60  751.53  
+Increase bin node pool size from =256000 to 512000 
+
+
+  5300687 855873  5490156   9.807728e+05   9.887472e+05 8.1e-03  785.04  757.74  
+  5301745 856017  5491246   9.807728e+05   9.887472e+05 8.1e-03  785.26  757.90  
+  5302903 856203  5492443   9.807728e+05   9.887472e+05 8.1e-03  785.47  758.06  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  5353609 868792  5545265   9.807728e+05   9.887472e+05 8.1e-03  792.90  765.27  
+Increase bin node pool size from =64000 to 128000 
+
+
+  5403428 881489  5597274   9.807728e+05   9.887472e+05 8.1e-03  800.21  772.37  
+  5423027 886330  5617806   9.807728e+05   9.887472e+05 8.1e-03  803.13  775.20  
+  5464454 897184  5661351   9.807728e+05   9.887472e+05 8.1e-03  809.33  781.21  
+Increase bin node pool size from =256000 to 512000 
+
+
+  5497332 906149  5695985   9.807728e+05   9.887472e+05 8.1e-03  814.26  786.00  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  5556644 924862  5757794   9.807766e+05   9.887472e+05 8.1e-03  823.11  794.58  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  5678926 968565  5885489   9.807948e+05   9.887472e+05 8.0e-03  841.26  812.25  
+  5738339 985781  5947046   9.808151e+05   9.887472e+05 8.0e-03  850.14  820.83  
+Increase bin node pool size from =128000 to 256000 
+
+
+  5795397 999356  6006503   9.808216e+05   9.887472e+05 8.0e-03  858.61  829.07  
+  5852460 1009853  6066134   9.808331e+05   9.887472e+05 8.0e-03  867.02  837.21  
+  5893028 1015496  6108451   9.808363e+05   9.887472e+05 8.0e-03  872.95  842.96  
+Increase node pool size from =32000 to 64000 
+
+
+  5951560 1022753  6169964   9.808363e+05   9.887472e+05 8.0e-03  881.41  851.13  
+Increase bin node pool size from =256000 to 512000 
+
+
+  6006479 1030812  6227157   9.808363e+05   9.887472e+05 8.0e-03  889.38  858.86  
+  6054792 1038374  6277412   9.808363e+05   9.887472e+05 8.0e-03  896.36  865.67  
+Increase bin node pool size from =256000 to 512000 
+
+
+  6097861 1046125  6322724   9.808363e+05   9.887472e+05 8.0e-03  902.60  871.74  
+Increase bin node pool size from =256000 to 512000 
+
+
+  6120721 1050874  6347101   9.808363e+05   9.887472e+05 8.0e-03  905.95  874.97  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  6167831 1060621  6396690   9.808366e+05   9.887472e+05 8.0e-03  912.85  881.66  
+Increase bin node pool size from =256000 to 512000 
+
+
+  6231516 1072932  6462691   9.808414e+05   9.887472e+05 8.0e-03  922.35  890.94  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  6285089 1082127  6519862   9.808590e+05   9.887472e+05 8.0e-03  930.29  898.68  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  6339696 1089900  6576811   9.808663e+05   9.887472e+05 8.0e-03  938.33  906.50  
+  6355894 1091755  6593691   9.808754e+05   9.887472e+05 8.0e-03  940.75  908.83  
+  6358567 1092107  6596474   9.808754e+05   9.887472e+05 8.0e-03  941.21  909.22  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  6411221 1099437  6651538   9.808754e+05   9.887472e+05 8.0e-03  949.10  916.86  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  6465164 1106850  6708169   9.808754e+05   9.887472e+05 8.0e-03  957.07  924.61  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  6514779 1111835  6761209   9.808754e+05   9.885856e+05 7.8e-03  964.54  931.88  
+  6514852 895753  6761284   9.808754e+05   9.885856e+05 7.8e-03  964.77  931.89  
+  6514930 895765  6761365   9.808754e+05   9.885856e+05 7.8e-03  964.89  931.91  
+  6577408 900492  6827115   9.808754e+05   9.885856e+05 7.8e-03  974.20  940.95  
+  6592933 901448  6843190   9.808754e+05   9.885856e+05 7.8e-03  976.53  943.22  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  6648164 907673  6901223   9.808754e+05   9.885856e+05 7.8e-03  984.86  951.34  
+Increase bin node pool size from =128000 to 256000 
+
+
+  6705373 913090  6962446   9.808754e+05   9.885856e+05 7.8e-03  993.55  959.78  
+Increase bin node pool size from =128000 to 256000 
+
+
+  6812957 925878  7075199   9.808812e+05   9.885856e+05 7.8e-03  1009.85  975.69  
+  6870644 936827  7135255   9.808933e+05   9.885856e+05 7.8e-03  1018.57  984.14  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7094694 986228  7369631   9.809162e+05   9.885856e+05 7.8e-03  1052.30  1017.14  
+  7123826 989623  7399954   9.809162e+05   9.885856e+05 7.8e-03  1056.69  1021.39  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+  7146483 992237  7423702   9.809162e+05   9.885856e+05 7.8e-03  1060.08  1024.67  
+Increase bin node pool size from =64000 to 128000 
+
+
+  7175477 995187  7453959   9.809162e+05   9.885856e+05 7.8e-03  1064.42  1028.87  
+  7228845 999693  7509941   9.809162e+05   9.885856e+05 7.8e-03  1072.33  1036.52  
+Increase bin node pool size from =256000 to 512000 
+
+
+  7280080 1004236  7563422   9.809162e+05   9.885856e+05 7.8e-03  1079.84  1043.79  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7335507 1011752  7621775   9.809162e+05   9.885856e+05 7.8e-03  1088.01  1051.73  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7391520 1023948  7680502   9.809213e+05   9.885856e+05 7.8e-03  1096.24  1059.71  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  7446435 1035473  7737640   9.809284e+05   9.885856e+05 7.7e-03  1104.28  1067.53  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7505365 1046635  7798582   9.809310e+05   9.885856e+05 7.7e-03  1112.95  1075.95  
+  7522276 1049548  7816079   9.809402e+05   9.885856e+05 7.7e-03  1115.44  1078.37  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7575244 1057806  7871102   9.809426e+05   9.885856e+05 7.7e-03  1123.24  1085.94  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7636014 1065136  7935472   9.809512e+05   9.885856e+05 7.7e-03  1132.17  1094.61  
+Increase bin node pool size from =256000 to 512000 
+
+
+  7684911 1069567  7986785   9.809538e+05   9.885856e+05 7.7e-03  1139.32  1101.54  
+  7736917 1073464  8041073   9.809556e+05   9.885856e+05 7.7e-03  1146.94  1108.95  
+Increase bin node pool size from =64000 to 128000 
+
+
+  7785368 1077228  8091940   9.809556e+05   9.885856e+05 7.7e-03  1154.15  1115.98  
+  7833892 1081091  8142582   9.809556e+05   9.885856e+05 7.7e-03  1161.34  1122.96  
+Increase node pool size from =64000 to 128000 
+
+
+  7883107 1084253  8193795   9.809556e+05   9.885856e+05 7.7e-03  1168.60  1130.03  
+Increase node pool size from =64000 to 128000 
+
+
+  7907073 1085650  8218744   9.809556e+05   9.885856e+05 7.7e-03  1172.16  1133.48  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  7933326 1087570  8246112   9.809556e+05   9.885856e+05 7.7e-03  1176.09  1137.27  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+  7984117 1090664  8299391   9.809556e+05   9.885856e+05 7.7e-03  1183.63  1144.58  
+Increase bin node pool size from =128000 to 256000 
+
+
+  8032549 1092952  8350210   9.809556e+05   9.885856e+05 7.7e-03  1190.83  1151.55  
+  8083148 1094862  8402880   9.809556e+05   9.885856e+05 7.7e-03  1198.32  1158.80  
+  8131826 1095119  8453444   9.809616e+05   9.885856e+05 7.7e-03  1205.61  1165.86  
+  8154904 1094943  8477332   9.809658e+05   9.885856e+05 7.7e-03  1209.06  1169.18  
+Increase node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  8206223 1096883  8531993   9.809720e+05   9.885856e+05 7.7e-03  1217.10  1176.63  
+Increase node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  8256499 1098764  8584732   9.809728e+05   9.885856e+05 7.7e-03  1224.60  1183.98  
+  8307408 1100592  8637554   9.809737e+05   9.885856e+05 7.7e-03  1232.30  1191.52  
+  8355308 1103330  8687782   9.809737e+05   9.885856e+05 7.7e-03  1239.50  1198.55  
+  8403620 1106779  8738525   9.809737e+05   9.885856e+05 7.7e-03  1246.76  1205.65  
+  8454623 1109076  8792198   9.809737e+05   9.885856e+05 7.7e-03  1254.32  1213.04  
+Increase node pool size from =64000 to 128000 
+
+
+  8500732 1109759  8840550   9.809737e+05   9.885856e+05 7.7e-03  1261.19  1219.76  
+  8550178 1110292  8892509   9.809737e+05   9.885856e+05 7.7e-03  1268.62  1226.99  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  8570871 1109072  8914284   9.809737e+05   9.885856e+05 7.7e-03  1271.69  1229.97  
+  8621847 1108615  8967460   9.809737e+05   9.885856e+05 7.7e-03  1279.30  1237.33  
+  8673764 1108890  9022291   9.809772e+05   9.885856e+05 7.7e-03  1286.98  1244.78  
+Increase node pool size from =64000 to 128000 
+
+
+  8723379 1109319  9074205   9.809833e+05   9.885856e+05 7.7e-03  1294.32  1251.88  
+  8751205 1108969  9103214   9.809877e+05   9.885856e+05 7.7e-03  1298.42  1255.86  
+Increase node pool size from =64000 to 128000 
+
+
+  8799431 1109926  9153528   9.809905e+05   9.885856e+05 7.7e-03  1305.68  1262.85  
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  8847332 1109455  9203806   9.809929e+05   9.885856e+05 7.7e-03  1312.81  1269.77  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+  8896179 1111096  9254602   9.809969e+05   9.885856e+05 7.7e-03  1320.22  1276.95  
+  8945766 1111832  9306253   9.809994e+05   9.885856e+05 7.7e-03  1327.65  1284.19  
+  8996107 1110976  9358831   9.809994e+05   9.885856e+05 7.7e-03  1335.16  1291.53  
+  9048140 1108662  9413677   9.809994e+05   9.885856e+05 7.7e-03  1342.80  1299.01  
+  9095476 1105557  9463439   9.809994e+05   9.885856e+05 7.7e-03  1349.79  1305.83  
+  9144468 1101537  9514700   9.809994e+05   9.885856e+05 7.7e-03  1356.96  1312.83  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  9215731 1096557  9589370   9.809994e+05   9.885856e+05 7.7e-03  1367.39  1323.02  
+  9225175 1096142  9599284   9.809994e+05   9.885856e+05 7.7e-03  1368.85  1324.37  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  9270902 1095657  9647342   9.809994e+05   9.885856e+05 7.7e-03  1375.67  1331.01  
+Increase bin node pool size from =128000 to 256000 
+
+
+  9323514 1096244  9702549   9.810010e+05   9.885856e+05 7.7e-03  1383.55  1338.69  
+  9380774 1096942  9764716   9.810097e+05   9.885856e+05 7.7e-03  1392.04  1346.99  
+  9396238 1097160  9780881   9.810141e+05   9.885856e+05 7.7e-03  1394.39  1349.30  
+Increase node pool size from =64000 to 128000 
+
+
+  9453367 1101320  9842545   9.810184e+05   9.885856e+05 7.7e-03  1402.96  1357.66  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  9492877 1103534  9883950   9.810198e+05   9.885856e+05 7.7e-03  1408.86  1363.42  
+Increase bin node pool size from =128000 to 256000 
+
+
+  9540453 1107063  9933743   9.810199e+05   9.885856e+05 7.7e-03  1416.00  1370.35  
+Increase bin node pool size from =256000 to 512000 
+
+
+  9589248 1109537  9984757   9.810199e+05   9.885856e+05 7.7e-03  1423.30  1377.44  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  9611829 1110724 10008515   9.810199e+05   9.885856e+05 7.7e-03  1426.73  1380.74  
+  9662072 1113988 10061278   9.810199e+05   9.885856e+05 7.7e-03  1434.36  1388.13  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+  9671809 1114705 10071472   9.810199e+05   9.885856e+05 7.7e-03  1435.87  1389.58  
+Increase bin node pool size from =128000 to 256000 
+
+
+  9721450 1120353 10124860   9.810199e+05   9.885856e+05 7.7e-03  1443.39  1396.86  
+Increase bin node pool size from =128000 to 256000 
+
+
+  9777445 1127429 10184547   9.810199e+05   9.885856e+05 7.7e-03  1451.84  1405.09  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+  9817022 1132520 10226710   9.810199e+05   9.885856e+05 7.7e-03  1458.07  1411.01  
+Increase node pool size from =64000 to 128000 
+
+
+  9865979 1139069 10278716   9.810199e+05   9.885856e+05 7.7e-03  1465.63  1418.37  
+Increase bin node pool size from =256000 to 512000 
+
+
+  9876599 1139992 10289902   9.810233e+05   9.885856e+05 7.6e-03  1467.33  1419.98  
+  9887517 1140817 10301630   9.810243e+05   9.885856e+05 7.6e-03  1469.09  1421.65  
+Increase bin node pool size from =128000 to 256000 
+
+
+  9941671 1146703 10359048   9.810313e+05   9.885856e+05 7.6e-03  1477.54  1429.93  
+  9978434 1149616 10397748   9.810344e+05   9.885856e+05 7.6e-03  1483.16  1435.44  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10029979 1153356 10452088   9.810431e+05   9.885856e+05 7.6e-03  1490.92  1443.02  
+ 10045165 1153990 10468069   9.810463e+05   9.885856e+05 7.6e-03  1493.20  1445.24  
+ 10069289 1154892 10494371   9.810486e+05   9.885856e+05 7.6e-03  1496.89  1448.81  
+ 10071348 1155019 10496552   9.810513e+05   9.885856e+05 7.6e-03  1497.26  1449.11  
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10123432 1158387 10553670   9.810545e+05   9.885856e+05 7.6e-03  1505.10  1456.71  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10150123 1160000 10582048   9.810559e+05   9.885856e+05 7.6e-03  1509.14  1460.63  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10203292 1169404 10638076   9.810559e+05   9.885856e+05 7.6e-03  1517.40  1468.68  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10255738 1179124 10694964   9.810559e+05   9.885856e+05 7.6e-03  1525.67  1476.75  
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10306620 1189097 10748818   9.810559e+05   9.885856e+05 7.6e-03  1533.75  1484.67  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10361259 1202575 10806932   9.810559e+05   9.885856e+05 7.6e-03  1542.50  1493.23  
+ 10409855 1212311 10858235   9.810559e+05   9.885856e+05 7.6e-03  1550.26  1500.83  
+ 10414466 1213216 10863083   9.810559e+05   9.885856e+05 7.6e-03  1551.03  1501.55  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10463983 1222790 10915902   9.810559e+05   9.885856e+05 7.6e-03  1558.98  1509.27  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10513132 1231100 10969186   9.810562e+05   9.885856e+05 7.6e-03  1566.56  1516.66  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10563733 1238540 11023015   9.810601e+05   9.885856e+05 7.6e-03  1574.22  1524.12  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 10615074 1245101 11079713   9.810703e+05   9.885856e+05 7.6e-03  1581.96  1531.64  
+Increase bin node pool size from =256000 to 512000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 10666253 1251492 11134982   9.810758e+05   9.885856e+05 7.6e-03  1589.73  1538.98  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 10679359 1253257 11148872   9.810822e+05   9.885856e+05 7.6e-03  1591.76  1540.93  
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 11535228 1442516 12060331   9.811256e+05   9.885856e+05 7.5e-03  1725.16  1671.76  
+ 11588555 1453060 12117460   9.811256e+05   9.885856e+05 7.5e-03  1733.60  1679.94  
+Increase bin node pool size from =128000 to 256000 
+
+
+ 11628981 1459212 12161529   9.811256e+05   9.885856e+05 7.5e-03  1739.90  1686.12  
+ 11686161 1469403 12223243   9.811256e+05   9.885856e+05 7.5e-03  1748.95  1694.94  
+ 11726540 1477157 12266467   9.811256e+05   9.885856e+05 7.5e-03  1755.32  1701.16  
+ 11781985 1489657 12325567   9.811278e+05   9.885856e+05 7.5e-03  1764.13  1709.78  
+ 11830908 1502254 12378887   9.811369e+05   9.885856e+05 7.5e-03  1771.87  1717.36  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 11891326 1520093 12443922   9.811373e+05   9.885856e+05 7.5e-03  1781.38  1726.66  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 11945937 1537204 12502602   9.811448e+05   9.885856e+05 7.5e-03  1789.91  1735.00  
+ 11956163 1540139 12513539   9.811499e+05   9.885856e+05 7.5e-03  1791.55  1736.56  
+ 12009920 1557093 12571587   9.811529e+05   9.885856e+05 7.5e-03  1799.95  1744.77  
+ 12063345 1572523 12628541   9.811555e+05   9.885856e+05 7.5e-03  1808.27  1752.92  
+ 12109691 1585418 12678296   9.811555e+05   9.885856e+05 7.5e-03  1815.64  1760.08  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12152077 1595758 12724175   9.811555e+05   9.885856e+05 7.5e-03  1822.38  1766.65  
+Increase node pool size from =64000 to 128000 
+
+
+ 12196594 1607144 12772292   9.811555e+05   9.885856e+05 7.5e-03  1829.47  1773.55  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12242832 1619235 12821659   9.811555e+05   9.885856e+05 7.5e-03  1836.84  1780.73  
+Increase node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12298869 1634594 12882215   9.811555e+05   9.885856e+05 7.5e-03  1845.82  1789.51  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12348363 1647739 12935478   9.811555e+05   9.885856e+05 7.5e-03  1853.57  1797.06  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12400858 1662013 12992573   9.811555e+05   9.885856e+05 7.5e-03  1861.88  1805.14  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12453525 1676269 13049303   9.811649e+05   9.885856e+05 7.5e-03  1870.11  1813.22  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12507298 1690750 13108595   9.811656e+05   9.885856e+05 7.5e-03  1878.62  1821.54  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 12562040 1705074 13167376   9.811744e+05   9.885856e+05 7.5e-03  1887.26  1830.00  
+ 12619772 1719286 13230398   9.811823e+05   9.885856e+05 7.5e-03  1896.39  1838.87  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 12671772 1732382 13286398   9.811827e+05   9.885856e+05 7.5e-03  1904.69  1846.99  
+ 12725898 1744959 13345975   9.811844e+05   9.885856e+05 7.5e-03  1913.21  1855.33  
+ 12778166 1758853 13403499   9.811844e+05   9.885856e+05 7.5e-03  1921.53  1863.48  
+ 13366950 1914952 14042599   9.812160e+05   9.885856e+05 7.5e-03  2013.28  1953.39  
+ 13422857 1929565 14104642   9.812160e+05   9.885856e+05 7.5e-03  2021.83  1961.67  
+ 13475309 1944052 14162180   9.812160e+05   9.885856e+05 7.5e-03  2029.91  1969.58  
+ 13528959 1959217 14220098   9.812160e+05   9.885856e+05 7.5e-03  2038.38  1977.88  
+ 13580047 1972856 14275077   9.812160e+05   9.885856e+05 7.5e-03  2046.46  1985.78  
+ 13630003 1986702 14330468   9.812160e+05   9.885856e+05 7.5e-03  2054.31  1993.46  
+ 13683376 2002062 14388760   9.812202e+05   9.885856e+05 7.5e-03  2062.67  2001.67  
+ 13738895 2017308 14448375   9.812212e+05   9.885856e+05 7.4e-03  2071.34  2010.13  
+ 13791277 2032545 14504578   9.812264e+05   9.885856e+05 7.4e-03  2079.44  2018.04  
+ 13843993 2050771 14561555   9.812320e+05   9.885856e+05 7.4e-03  2087.57  2025.97  
+ 13897970 2066810 14619770   9.812376e+05   9.885856e+05 7.4e-03  2096.02  2034.18  
+ 13954984 2080136 14681951   9.812376e+05   9.885856e+05 7.4e-03  2104.97  2042.47  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14009757 2093554 14742176   9.812376e+05   9.885856e+05 7.4e-03  2113.71  2050.99  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14067942 2106670 14805994   9.812376e+05   9.885856e+05 7.4e-03  2122.95  2060.00  
+ 14130863 2121135 14874506   9.812376e+05   9.885856e+05 7.4e-03  2132.86  2069.69  
+ 14183402 2134700 14931843   9.812376e+05   9.885856e+05 7.4e-03  2141.23  2077.88  
+ 14233158 2149025 14985969   9.812376e+05   9.885856e+05 7.4e-03  2149.24  2085.69  
+ 14284740 2166183 15042162   9.812384e+05   9.885856e+05 7.4e-03  2157.76  2094.04  
+ 14338594 2185219 15099957   9.812405e+05   9.885856e+05 7.4e-03  2166.49  2102.59  
+ 14393572 2203638 15159971   9.812448e+05   9.885856e+05 7.4e-03  2175.40  2111.30  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14450156 2219465 15222210   9.812516e+05   9.885856e+05 7.4e-03  2184.45  2120.18  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14507044 2234134 15284612   9.812588e+05   9.885856e+05 7.4e-03  2193.28  2128.76  
+Increase bin node pool size from =256000 to 512000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 14562942 2244040 15345579   9.812603e+05   9.885856e+05 7.4e-03  2201.87  2137.17  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14621309 2254944 15409491   9.812610e+05   9.885856e+05 7.4e-03  2210.98  2146.09  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14683385 2267781 15476513   9.812610e+05   9.885856e+05 7.4e-03  2220.87  2155.75  
+ 14738361 2281275 15535873   9.812610e+05   9.885856e+05 7.4e-03  2229.86  2164.50  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 14796368 2296009 15598603   9.812610e+05   9.885856e+05 7.4e-03  2239.34  2173.72  
+ 14859380 2316157 15666935   9.812610e+05   9.885856e+05 7.4e-03  2249.50  2183.64  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 14919216 2335634 15731727   9.812610e+05   9.885856e+05 7.4e-03  2258.96  2192.85  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+ 14975034 2351517 15793623   9.812637e+05   9.885856e+05 7.4e-03  2267.59  2201.25  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15022440 2364837 15845836   9.812690e+05   9.885856e+05 7.4e-03  2274.90  2208.34  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15077686 2377796 15905653   9.812780e+05   9.885856e+05 7.4e-03  2283.42  2216.67  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15130420 2388657 15964572   9.812784e+05   9.885856e+05 7.4e-03  2291.59  2224.65  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15178080 2397808 16017975   9.812807e+05   9.885856e+05 7.4e-03  2298.94  2231.83  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 15230763 2408968 16075966   9.812807e+05   9.885856e+05 7.4e-03  2307.12  2239.83  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15286756 2421626 16136573   9.812807e+05   9.885856e+05 7.4e-03  2315.93  2248.45  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 15342981 2437381 16198130   9.812807e+05   9.885856e+05 7.4e-03  2324.86  2257.16  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 15397510 2452796 16257677   9.812807e+05   9.885856e+05 7.4e-03  2333.69  2265.79  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 15448864 2466561 16313211   9.812807e+05   9.885856e+05 7.4e-03  2341.88  2273.78  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15505896 2482380 16376627   9.812807e+05   9.885856e+05 7.4e-03  2351.05  2282.62  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15564261 2497853 16440636   9.812868e+05   9.885856e+05 7.4e-03  2360.38  2291.67  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 15608973 2507967 16489575   9.812879e+05   9.885856e+05 7.4e-03  2367.48  2298.56  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 15660198 2519515 16545420   9.812929e+05   9.885856e+05 7.4e-03  2375.87  2306.57  
+Increase node pool size from =128000 to 256000 
+
+
+ 15712681 2532250 16602651   9.812999e+05   9.885856e+05 7.4e-03  2384.23  2314.69  
+Increase node pool size from =128000 to 256000 
+
+
+ 15763997 2545870 16659186   9.813011e+05   9.885856e+05 7.4e-03  2392.40  2322.59  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 15790487 2552644 16687568   9.813039e+05   9.885856e+05 7.4e-03  2396.60  2326.67  
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 15839689 2566532 16741860   9.813039e+05   9.885856e+05 7.4e-03  2404.39  2334.22  
+Increase node pool size from =128000 to 256000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 15885867 2582613 16791560   9.813039e+05   9.885856e+05 7.4e-03  2411.66  2341.28  
+Increase node pool size from =128000 to 256000 
+
+
+ 15937797 2599036 16847693   9.813039e+05   9.885856e+05 7.4e-03  2419.78  2349.21  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase node pool size from =64000 to 128000 
+
+
+ 15993192 2616019 16908910   9.813039e+05   9.885856e+05 7.4e-03  2428.55  2357.80  
+ 16047918 2630516 16968421   9.813039e+05   9.885856e+05 7.4e-03  2437.32  2366.38  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 16106773 2643980 17032633   9.813039e+05   9.885856e+05 7.4e-03  2446.65  2375.52  
+ 16166505 2656019 17097319   9.813083e+05   9.885856e+05 7.4e-03  2456.10  2384.77  
+ 16225002 2668752 17160832   9.813095e+05   9.885856e+05 7.4e-03  2465.27  2393.72  
+ 16283698 2681180 17224572   9.813173e+05   9.885856e+05 7.4e-03  2474.45  2402.69  
+ 16343368 2695150 17288867   9.813237e+05   9.885856e+05 7.3e-03  2483.72  2411.76  
+ 16402082 2711979 17352229   9.813246e+05   9.885856e+05 7.3e-03  2492.80  2420.63  
+ 16453810 2725260 17408274   9.813300e+05   9.885856e+05 7.3e-03  2500.86  2428.50  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 16505957 2738873 17464481   9.813300e+05   9.885856e+05 7.3e-03  2509.04  2436.46  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 16557947 2750628 17520186   9.813300e+05   9.885856e+05 7.3e-03  2517.11  2444.31  
+ 16610873 2762005 17577336   9.813300e+05   9.885856e+05 7.3e-03  2525.30  2452.27  
+Increase node pool size from =128000 to 256000 
+
+
+ 16659289 2770460 17630356   9.813300e+05   9.885856e+05 7.3e-03  2532.81  2459.58  
+Increase node pool size from =128000 to 256000 
+
+
+ 16703602 2778899 17678979   9.813300e+05   9.885856e+05 7.3e-03  2539.69  2466.28  
+ 16758510 2789595 17739561   9.813300e+05   9.885856e+05 7.3e-03  2548.28  2474.51  
+ 16812932 2800421 17798536   9.813313e+05   9.885856e+05 7.3e-03  2556.54  2482.55  
+Increase node pool size from =128000 to 256000 
+
+
+ 16870086 2811194 17861425   9.813342e+05   9.885856e+05 7.3e-03  2565.22  2491.01  
+ 16935878 2827428 17933065   9.813400e+05   9.885856e+05 7.3e-03  2575.35  2500.92  
+ 16998614 2841572 18001740   9.813459e+05   9.885856e+05 7.3e-03  2585.13  2510.47  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 17062049 2855375 18072228   9.813470e+05   9.885856e+05 7.3e-03  2594.90  2520.03  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 17126998 2869449 18142752   9.813470e+05   9.885856e+05 7.3e-03  2605.04  2529.91  
+ 17186668 2878524 18208777   9.813470e+05   9.885856e+05 7.3e-03  2614.40  2539.04  
+ 17248780 2888582 18276485   9.813470e+05   9.885856e+05 7.3e-03  2623.99  2548.42  
+Increase bin node pool size from =512000 to 1024000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 17297900 2896253 18329998   9.813470e+05   9.885856e+05 7.3e-03  2631.49  2555.74  
+ 17346435 2904931 18382488   9.813470e+05   9.885856e+05 7.3e-03  2638.99  2563.06  
+ 17393610 2914005 18433635   9.813470e+05   9.885856e+05 7.3e-03  2646.22  2570.09  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 17442205 2924142 18485828   9.813496e+05   9.885856e+05 7.3e-03  2653.62  2577.26  
+ 17490507 2934288 18538763   9.813538e+05   9.885856e+05 7.3e-03  2660.95  2584.35  
+ 17541397 2945164 18594473   9.813601e+05   9.885856e+05 7.3e-03  2668.71  2591.88  
+Increase node pool size from =128000 to 256000 
+
+
+ 17594153 2955238 18650665   9.813615e+05   9.885856e+05 7.3e-03  2676.85  2599.79  
+Increase node pool size from =128000 to 256000 
+
+
+ 17650395 2965236 18711470   9.813667e+05   9.885856e+05 7.3e-03  2685.46  2608.15  
+ 17710458 2974001 18776738   9.813675e+05   9.885856e+05 7.3e-03  2694.68  2617.12  
+Increase node pool size from =128000 to 256000 
+
+
+ 17771388 2981442 18842305   9.813675e+05   9.885856e+05 7.3e-03  2704.00  2626.22  
+ 17828927 2988647 18904383   9.813675e+05   9.885856e+05 7.3e-03  2712.80  2634.81  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 17890083 2996665 18970096   9.813675e+05   9.885856e+05 7.3e-03  2722.18  2643.97  
+ 17953486 3004492 19038475   9.813675e+05   9.885856e+05 7.3e-03  2731.77  2653.36  
+ 18014936 3013524 19104208   9.813675e+05   9.885856e+05 7.3e-03  2741.10  2662.46  
+ 18064132 3022471 19157574   9.813675e+05   9.885856e+05 7.3e-03  2748.56  2669.74  
+ 18115924 3031075 19212668   9.813706e+05   9.885856e+05 7.3e-03  2756.41  2677.36  
+ 18162416 3038240 19262634   9.813744e+05   9.885856e+05 7.3e-03  2763.39  2683.86  
+ 18205904 3043489 19309136   9.813779e+05   9.885856e+05 7.3e-03  2769.85  2690.14  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 18258179 3050150 19365391   9.813817e+05   9.885856e+05 7.3e-03  2777.77  2697.83  
+ 18311339 3057239 19421833   9.813870e+05   9.885856e+05 7.3e-03  2785.73  2705.54  
+ 18361283 3063773 19475596   9.813881e+05   9.885856e+05 7.3e-03  2793.26  2712.82  
+ 18417809 3070494 19536011   9.813881e+05   9.885856e+05 7.3e-03  2801.87  2721.17  
+ 18472263 3075076 19595059   9.813881e+05   9.885856e+05 7.3e-03  2810.10  2729.14  
+ 18529755 3078671 19657106   9.813881e+05   9.885856e+05 7.3e-03  2818.75  2737.53  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 18590366 3082450 19723203   9.813881e+05   9.885856e+05 7.3e-03  2827.68  2746.24  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 18647818 3086502 19784850   9.813881e+05   9.885856e+05 7.3e-03  2836.20  2754.54  
+Increase node pool size from =128000 to 256000 
+
+
+ 18707136 3090446 19848418   9.813881e+05   9.885856e+05 7.3e-03  2844.94  2763.05  
+ 18760084 3094051 19905091   9.813897e+05   9.885856e+05 7.3e-03  2852.73  2770.63  
+ 18803463 3098062 19951640   9.813935e+05   9.885856e+05 7.3e-03  2859.20  2776.94  
+ 18850002 3102083 20001781   9.813960e+05   9.885856e+05 7.3e-03  2866.23  2783.78  
+ 18898018 3106852 20053077   9.813991e+05   9.885856e+05 7.3e-03  2873.40  2790.76  
+ 18942618 3110033 20102374   9.814042e+05   9.885856e+05 7.3e-03  2879.99  2797.17  
+ 18993997 3113769 20157860   9.814043e+05   9.885856e+05 7.3e-03  2887.58  2804.58  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 19049124 3117619 20216461   9.814043e+05   9.885856e+05 7.3e-03  2895.71  2812.50  
+ 19100969 3120119 20271396   9.814043e+05   9.885856e+05 7.3e-03  2903.28  2819.85  
+ 19153330 3123055 20327156   9.814043e+05   9.885856e+05 7.3e-03  2910.96  2827.29  
+ 19204711 3126245 20381437   9.814043e+05   9.885856e+05 7.3e-03  2918.51  2834.63  
+ 19257644 3128547 20437658   9.814043e+05   9.885856e+05 7.3e-03  2926.23  2842.11  
+ 19310210 3131230 20493555   9.814043e+05   9.885856e+05 7.3e-03  2933.85  2849.46  
+ 19367368 3135243 20554012   9.814044e+05   9.885856e+05 7.3e-03  2942.17  2857.52  
+ 19413244 3138285 20602800   9.814073e+05   9.885856e+05 7.3e-03  2948.85  2863.99  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 19467990 3141623 20661072   9.814110e+05   9.885856e+05 7.3e-03  2956.83  2871.75  
+ 19515230 3145421 20711991   9.814154e+05   9.885856e+05 7.3e-03  2963.75  2878.47  
+ 19565329 3149982 20765333   9.814158e+05   9.885856e+05 7.3e-03  2971.02  2885.55  
+ 19610343 3153800 20813109   9.814197e+05   9.885856e+05 7.2e-03  2977.59  2891.94  
+Increase node pool size from =128000 to 256000 
+
+
+ 19661170 3157481 20867046   9.814201e+05   9.885856e+05 7.2e-03  2984.96  2899.11  
+ 19719795 3161883 20929148   9.814201e+05   9.885856e+05 7.2e-03  2993.62  2907.54  
+ 19774575 3164716 20987713   9.814201e+05   9.885856e+05 7.2e-03  3001.70  2915.39  
+ 19826819 3166845 21043146   9.814201e+05   9.885856e+05 7.2e-03  3009.52  2923.01  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 19884438 3167866 21104422   9.814201e+05   9.885856e+05 7.2e-03  3018.06  2931.34  
+Increase bin node pool size from =512000 to 1024000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 19933204 3168398 21156701   9.814201e+05   9.885856e+05 7.2e-03  3025.24  2938.31  
+ 19988142 3169496 21215118   9.814201e+05   9.885856e+05 7.2e-03  3033.25  2946.06  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+ 20036929 3171283 21266732   9.814207e+05   9.885856e+05 7.2e-03  3040.31  2952.88  
+ 20086139 3172541 21319016   9.814207e+05   9.885856e+05 7.2e-03  3047.41  2959.75  
+ 20134067 3175107 21369447   9.814207e+05   9.885856e+05 7.2e-03  3054.33  2966.40  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 20182053 3177689 21420434   9.814207e+05   9.885856e+05 7.2e-03  3061.42  2973.14  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 20227421 3181174 21468745   9.814207e+05   9.885856e+05 7.2e-03  3067.95  2979.47  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 20274930 3185116 21519761   9.814207e+05   9.885856e+05 7.2e-03  3074.96  2986.26  
+ 20322044 3187626 21569604   9.814207e+05   9.885856e+05 7.2e-03  3081.93  2993.01  
+ 20370887 3190490 21621362   9.814207e+05   9.885856e+05 7.2e-03  3089.08  2999.95  
+ 20430988 3192885 21685016   9.814207e+05   9.885856e+05 7.2e-03  3097.97  3008.59  
+ 20487936 3194898 21745525   9.814207e+05   9.885856e+05 7.2e-03  3106.41  3016.79  
+ 20542499 3197039 21803597   9.814207e+05   9.885856e+05 7.2e-03  3114.52  3024.70  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 20592756 3199024 21856687   9.814207e+05   9.885856e+05 7.2e-03  3121.92  3031.87  
+ 20648710 3202402 21916043   9.814207e+05   9.885856e+05 7.2e-03  3130.22  3039.95  
+Increase node pool size from =128000 to 256000 
+
+
+ 20702916 3205001 21974022   9.814207e+05   9.885856e+05 7.2e-03  3138.24  3047.73  
+ 20757298 3209857 22031401   9.814207e+05   9.885856e+05 7.2e-03  3146.33  3055.55  
+ 20813325 3215954 22091725   9.814207e+05   9.885856e+05 7.2e-03  3154.70  3063.66  
+ 20865465 3220361 22148468   9.814207e+05   9.885856e+05 7.2e-03  3162.48  3071.20  
+ 20921298 3225491 22208381   9.814207e+05   9.885856e+05 7.2e-03  3170.81  3079.30  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 20975005 3229260 22265292   9.814207e+05   9.885856e+05 7.2e-03  3178.72  3086.96  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 21028114 3232273 22322701   9.814207e+05   9.885856e+05 7.2e-03  3186.57  3094.62  
+ 21079574 3235271 22377531   9.814207e+05   9.885856e+05 7.2e-03  3194.11  3101.95  
+ 21130706 3237226 22431680   9.814207e+05   9.885856e+05 7.2e-03  3201.49  3109.13  
+ 21184653 3239620 22489522   9.814207e+05   9.885856e+05 7.2e-03  3209.31  3116.73  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 21241280 3243173 22550154   9.814207e+05   9.885856e+05 7.2e-03  3217.52  3124.73  
+Increase bin node pool size from =256000 to 512000 
+
+
+ 21296349 3246725 22609583   9.814207e+05   9.885856e+05 7.2e-03  3225.52  3132.51  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 21349381 3251605 22665767   9.814207e+05   9.885856e+05 7.2e-03  3233.21  3139.98  
+ 21402398 3256838 22721947   9.814207e+05   9.885856e+05 7.2e-03  3240.90  3147.48  
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 21454610 3262322 22778246   9.814207e+05   9.885856e+05 7.2e-03  3248.43  3154.80  
+Increase node pool size from =128000 to 256000 
+
+
+ 21510087 3268631 22837164   9.814207e+05   9.885856e+05 7.2e-03  3256.45  3162.58  
+ 21564675 3275488 22896590   9.814207e+05   9.885856e+05 7.2e-03  3264.23  3170.13  
+ 21613326 3281504 22948512   9.814207e+05   9.885856e+05 7.2e-03  3271.17  3176.84  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 21660827 3288429 22999458   9.814207e+05   9.885856e+05 7.2e-03  3277.95  3183.40  
+Increase node pool size from =128000 to 256000 
+
+
+ 21710389 3295489 23051698   9.814207e+05   9.885856e+05 7.2e-03  3285.07  3190.27  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 21759960 3302060 23104794   9.814207e+05   9.885856e+05 7.2e-03  3292.19  3197.18  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 21812466 3308212 23161935   9.814207e+05   9.885856e+05 7.2e-03  3299.74  3204.50  
+ 21867244 3313263 23221474   9.814207e+05   9.885856e+05 7.2e-03  3307.53  3212.07  
+ 21922579 3318349 23280506   9.814207e+05   9.885856e+05 7.2e-03  3315.32  3219.62  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 21978510 3323565 23339665   9.814207e+05   9.885856e+05 7.2e-03  3323.25  3227.32  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22034365 3328827 23399341   9.814207e+05   9.885856e+05 7.2e-03  3331.19  3234.88  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22093689 3335239 23462201   9.814207e+05   9.885856e+05 7.2e-03  3339.55  3242.99  
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22149868 3342403 23522042   9.814207e+05   9.885856e+05 7.2e-03  3347.46  3250.66  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22205695 3348437 23582424   9.814207e+05   9.885856e+05 7.2e-03  3355.38  3258.35  
+Increase node pool size from =128000 to 256000 
+
+
+ 22258278 3353254 23638289   9.814207e+05   9.885856e+05 7.2e-03  3362.92  3265.68  
+ 22308967 3359603 23692438   9.814207e+05   9.885856e+05 7.2e-03  3370.26  3272.68  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 22357196 3365189 23743765   9.814207e+05   9.885856e+05 7.2e-03  3377.21  3279.40  
+Increase node pool size from =128000 to 256000 
+
+
+ 22405635 3369992 23795728   9.814207e+05   9.885856e+05 7.2e-03  3384.24  3286.18  
+Increase node pool size from =128000 to 256000 
+
+
+ 22452443 3375387 23846109   9.814207e+05   9.885856e+05 7.2e-03  3391.04  3292.76  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22503181 3379103 23900318   9.814207e+05   9.885856e+05 7.2e-03  3398.41  3299.91  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 22560555 3383821 23961160   9.814207e+05   9.885856e+05 7.2e-03  3406.72  3308.04  
+ 22610884 3387129 24015044   9.814207e+05   9.885856e+05 7.2e-03  3413.95  3315.02  
+ 22664216 3391230 24071462   9.814207e+05   9.885856e+05 7.2e-03  3421.52  3322.39  
+ 22718832 3394821 24129892   9.814207e+05   9.885856e+05 7.2e-03  3429.32  3329.98  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22772447 3398438 24187060   9.814207e+05   9.885856e+05 7.2e-03  3437.04  3337.49  
+Increase node pool size from =128000 to 256000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+ 22827826 3402538 24246268   9.814207e+05   9.885856e+05 7.2e-03  3444.98  3345.22  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22886679 3405975 24308609   9.814207e+05   9.885856e+05 7.2e-03  3453.40  3353.41  
+Increase bin node pool size from =512000 to 1024000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 22938123 3407714 24363021   9.814207e+05   9.885856e+05 7.2e-03  3460.78  3360.59  
+ 22989545 3409837 24417719   9.814207e+05   9.885856e+05 7.2e-03  3468.17  3367.80  
+Increase node pool size from =128000 to 256000 
+
+
+ 23034024 3412269 24466295   9.814207e+05   9.885856e+05 7.2e-03  3474.46  3373.90  
+ 23081157 3414356 24515804   9.814207e+05   9.885856e+05 7.2e-03  3481.18  3380.43  
+ 23131093 3416660 24569186   9.814207e+05   9.885856e+05 7.2e-03  3488.29  3387.33  
+ 23179376 3419837 24620127   9.814207e+05   9.885856e+05 7.2e-03  3495.04  3393.90  
+ 23222028 3422380 24664878   9.814207e+05   9.885856e+05 7.2e-03  3501.07  3399.71  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 23268158 3424062 24713932   9.814207e+05   9.885856e+05 7.2e-03  3507.61  3406.04  
+ 23314418 3425075 24763527   9.814207e+05   9.885856e+05 7.2e-03  3514.05  3412.28  
+ 23365302 3425736 24817334   9.814207e+05   9.885856e+05 7.2e-03  3521.20  3419.20  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 23415755 3426032 24871743   9.814207e+05   9.885856e+05 7.2e-03  3528.32  3426.13  
+ 23461805 3427178 24920251   9.814207e+05   9.885856e+05 7.2e-03  3534.76  3432.35  
+Increase node pool size from =128000 to 256000 
+
+
+ 23511718 3428324 24972749   9.814207e+05   9.885856e+05 7.2e-03  3541.69  3439.05  
+ 23568484 3430546 25033237   9.814207e+05   9.885856e+05 7.2e-03  3549.56  3446.69  
+ 23617618 3431565 25085528   9.814207e+05   9.885856e+05 7.2e-03  3556.47  3453.41  
+ 23674283 3432320 25145323   9.814207e+05   9.885856e+05 7.2e-03  3564.38  3461.11  
+ 23726694 3431900 25200586   9.814207e+05   9.885856e+05 7.2e-03  3571.78  3468.30  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 23776514 3432547 25253453   9.814207e+05   9.885856e+05 7.2e-03  3578.83  3475.14  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 23829911 3433091 25310175   9.814207e+05   9.885856e+05 7.2e-03  3586.40  3482.49  
+ 23876026 3434092 25359767   9.814207e+05   9.885856e+05 7.2e-03  3592.97  3488.85  
+ 23924863 3435785 25411680   9.814207e+05   9.885856e+05 7.2e-03  3599.93  3495.60  
+ 23971282 3437535 25460653   9.814207e+05   9.885856e+05 7.2e-03  3606.52  3501.97  
+ 24018349 3439191 25510763   9.814207e+05   9.885856e+05 7.2e-03  3613.20  3508.45  
+ 24071284 3442334 25566771   9.814207e+05   9.885856e+05 7.2e-03  3620.73  3515.76  
+ 24124967 3444233 25623523   9.814207e+05   9.885856e+05 7.2e-03  3628.40  3523.20  
+ 24173490 3446001 25675045   9.814207e+05   9.885856e+05 7.2e-03  3635.28  3529.83  
+ 24223910 3447433 25730679   9.814207e+05   9.885856e+05 7.2e-03  3642.72  3536.78  
+ 24276997 3449693 25787705   9.814207e+05   9.885856e+05 7.2e-03  3650.27  3544.12  
+ 24332520 3452726 25846221   9.814207e+05   9.885856e+05 7.2e-03  3658.06  3551.70  
+ 24381568 3455417 25898729   9.814207e+05   9.885856e+05 7.2e-03  3664.95  3558.38  
+ 24433209 3458297 25953527   9.814207e+05   9.885856e+05 7.2e-03  3672.20  3565.40  
+ 24480814 3462616 26005190   9.814207e+05   9.885856e+05 7.2e-03  3678.88  3571.88  
+Increase node pool size from =128000 to 256000 
+
+
+ 24528909 3466188 26056304   9.814207e+05   9.885856e+05 7.2e-03  3685.67  3578.45  
+ 24579059 3468515 26109348   9.814207e+05   9.885856e+05 7.2e-03  3692.68  3585.24  
+Increase node pool size from =128000 to 256000 
+
+
+ 24627221 3472448 26161919   9.814207e+05   9.885856e+05 7.2e-03  3699.39  3591.72  
+ 24678140 3475435 26216181   9.814207e+05   9.885856e+05 7.2e-03  3706.57  3598.68  
+ 24729579 3477068 26271266   9.814207e+05   9.885856e+05 7.2e-03  3713.74  3605.65  
+Increase node pool size from =128000 to 256000 
+
+
+ 24780807 3478622 26325240   9.814207e+05   9.885856e+05 7.2e-03  3720.93  3612.65  
+ 24830300 3481396 26377879   9.814207e+05   9.885856e+05 7.2e-03  3727.86  3619.40  
+ 24880383 3483551 26430545   9.814207e+05   9.885856e+05 7.2e-03  3734.81  3626.12  
+ 24929588 3486459 26482519   9.814207e+05   9.885856e+05 7.2e-03  3741.68  3632.80  
+ 24978744 3489751 26534306   9.814207e+05   9.885856e+05 7.2e-03  3748.54  3639.43  
+ 25030701 3495173 26589371   9.814207e+05   9.885856e+05 7.2e-03  3755.76  3646.46  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 25083270 3500071 26645150   9.814207e+05   9.885856e+05 7.2e-03  3763.11  3653.59  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 25136673 3505170 26701487   9.814207e+05   9.885856e+05 7.2e-03  3770.61  3660.88  
+ 25189055 3511346 26756869   9.814207e+05   9.885856e+05 7.2e-03  3777.97  3668.02  
+ 25239417 3515206 26811393   9.814207e+05   9.885856e+05 7.2e-03  3785.16  3674.91  
+ 25291715 3518173 26867433   9.814207e+05   9.885856e+05 7.2e-03  3792.61  3682.14  
+ 25342926 3521270 26921824   9.814207e+05   9.885856e+05 7.2e-03  3799.86  3689.16  
+ 25391968 3526512 26974101   9.814207e+05   9.885856e+05 7.2e-03  3806.75  3695.86  
+ 25450264 3530826 27035826   9.814207e+05   9.885856e+05 7.2e-03  3814.96  3703.87  
+ 25507493 3534059 27097413   9.814207e+05   9.885856e+05 7.2e-03  3823.05  3711.71  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 25561889 3539494 27155088   9.814207e+05   9.885856e+05 7.2e-03  3830.71  3719.14  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 25614366 3544509 27210826   9.814207e+05   9.885856e+05 7.2e-03  3838.05  3726.27  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 25664956 3549308 27265189   9.814207e+05   9.885856e+05 7.2e-03  3845.17  3733.17  
+ 25714641 3553855 27318058   9.814207e+05   9.885856e+05 7.2e-03  3852.18  3739.99  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 25764397 3557704 27370676   9.814207e+05   9.885856e+05 7.2e-03  3859.17  3746.77  
+ 25814287 3562252 27424362   9.814207e+05   9.885856e+05 7.2e-03  3866.23  3753.62  
+ 25863406 3562807 27477300   9.814207e+05   9.885856e+05 7.2e-03  3873.19  3760.09  
+ 25914166 3563649 27531186   9.814207e+05   9.885856e+05 7.2e-03  3880.46  3767.13  
+ 25961803 3566218 27581900   9.814207e+05   9.885856e+05 7.2e-03  3887.31  3773.79  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 26011655 3569800 27634891   9.814207e+05   9.885856e+05 7.2e-03  3894.39  3780.66  
+ 26056519 3572179 27682759   9.814207e+05   9.885856e+05 7.2e-03  3900.69  3786.77  
+ 26104806 3575945 27734144   9.814207e+05   9.885856e+05 7.2e-03  3907.56  3793.40  
+ 26150931 3579658 27782949   9.814207e+05   9.885856e+05 7.2e-03  3914.11  3799.73  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 26196020 3583380 27830509   9.814207e+05   9.885856e+05 7.2e-03  3920.55  3805.95  
+ 26241295 3586020 27878704   9.814207e+05   9.885856e+05 7.2e-03  3927.00  3812.19  
+ 26289609 3588383 27930325   9.814207e+05   9.885856e+05 7.2e-03  3933.87  3818.82  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 26335488 3589434 27979761   9.814207e+05   9.885856e+05 7.2e-03  3940.39  3825.12  
+ 26388098 3590239 28035097   9.814207e+05   9.885856e+05 7.2e-03  3947.86  3832.39  
+ 26432954 3591649 28082219   9.814207e+05   9.885856e+05 7.2e-03  3954.24  3838.57  
+ 26479993 3593990 28131682   9.814207e+05   9.885856e+05 7.2e-03  3960.93  3845.06  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 26527194 3596748 28181678   9.814207e+05   9.885856e+05 7.2e-03  3967.71  3851.65  
+ 26575874 3598633 28233710   9.814207e+05   9.885856e+05 7.2e-03  3974.71  3858.41  
+Increase node pool size from =128000 to 256000 
+
+
+ 26624241 3603033 28284559   9.814207e+05   9.885856e+05 7.2e-03  3981.65  3865.15  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 26672960 3606917 28335815   9.814207e+05   9.885856e+05 7.2e-03  3988.62  3871.90  
+ 26723298 3610705 28389305   9.814207e+05   9.885856e+05 7.2e-03  3995.86  3878.92  
+ 26770780 3613515 28439668   9.814207e+05   9.885856e+05 7.2e-03  4002.71  3885.56  
+ 26816864 3615076 28488345   9.814207e+05   9.885856e+05 7.2e-03  4009.34  3891.98  
+ 26863941 3616249 28539029   9.814207e+05   9.885856e+05 7.2e-03  4016.04  3898.46  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 26913834 3617230 28591250   9.814207e+05   9.885856e+05 7.2e-03  4023.09  3905.30  
+ 26960925 3618378 28640765   9.814207e+05   9.885856e+05 7.2e-03  4029.75  3911.73  
+ 27007088 3619139 28690420   9.814207e+05   9.885856e+05 7.2e-03  4036.36  3918.07  
+ 27059025 3620632 28745202   9.814207e+05   9.885856e+05 7.2e-03  4043.78  3925.26  
+ 27106572 3621251 28795584   9.814207e+05   9.885856e+05 7.2e-03  4050.55  3931.84  
+Increase node pool size from =128000 to 256000 
+
+
+ 27155880 3622597 28847301   9.814207e+05   9.885856e+05 7.2e-03  4057.57  3938.65  
+ 27199904 3624183 28894226   9.814207e+05   9.885856e+05 7.2e-03  4063.85  3944.73  
+ 27249635 3625899 28946373   9.814207e+05   9.885856e+05 7.2e-03  4070.91  3951.57  
+ 27300789 3626231 29000666   9.814207e+05   9.885856e+05 7.2e-03  4078.20  3958.65  
+ 27346200 3626833 29049856   9.814207e+05   9.885856e+05 7.2e-03  4084.67  3964.92  
+ 27391991 3628086 29098871   9.814207e+05   9.885856e+05 7.2e-03  4091.10  3971.16  
+ 27438290 3629728 29148234   9.814207e+05   9.885856e+05 7.2e-03  4097.62  3977.50  
+ 27490112 3631338 29202873   9.814207e+05   9.885856e+05 7.2e-03  4104.98  3984.65  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 27539664 3632690 29254670   9.814207e+05   9.885856e+05 7.2e-03  4112.03  3991.49  
+ 27587940 3635176 29306418   9.814207e+05   9.885856e+05 7.2e-03  4118.97  3998.23  
+ 27638313 3637796 29359730   9.814207e+05   9.885856e+05 7.2e-03  4126.50  4005.55  
+ 27685243 3639368 29410290   9.814207e+05   9.885856e+05 7.2e-03  4133.63  4012.47  
+ 27738715 3640636 29467027   9.814207e+05   9.885856e+05 7.2e-03  4141.72  4020.32  
+ 27792085 3642299 29523059   9.814207e+05   9.885856e+05 7.2e-03  4149.79  4028.17  
+ 27843456 3643721 29577246   9.814207e+05   9.885856e+05 7.2e-03  4157.38  4035.55  
+ 27895026 3644170 29631431   9.814207e+05   9.885856e+05 7.2e-03  4164.91  4042.85  
+ 27947483 3645255 29687058   9.814207e+05   9.885856e+05 7.2e-03  4172.56  4050.29  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 27998424 3645795 29740725   9.814207e+05   9.885856e+05 7.2e-03  4179.99  4057.52  
+ 28047783 3647548 29792764   9.814207e+05   9.885856e+05 7.2e-03  4187.25  4064.57  
+ 28103061 3649259 29851002   9.814207e+05   9.885856e+05 7.2e-03  4195.33  4072.42  
+ 28153391 3651820 29904510   9.814207e+05   9.885856e+05 7.2e-03  4202.67  4079.52  
+ 28206829 3655313 29960494   9.814207e+05   9.885856e+05 7.2e-03  4210.47  4087.09  
+ 28262345 3658578 30019048   9.814207e+05   9.885856e+05 7.2e-03  4218.58  4094.97  
+ 28317169 3659665 30076414   9.814207e+05   9.885856e+05 7.2e-03  4226.58  4102.75  
+ 28365654 3662268 30128196   9.814207e+05   9.885856e+05 7.2e-03  4233.68  4109.66  
+ 28415390 3664349 30180719   9.814207e+05   9.885856e+05 7.2e-03  4240.97  4116.71  
+ 28466060 3666138 30234516   9.814207e+05   9.885856e+05 7.2e-03  4248.36  4123.90  
+ 28514956 3668155 30286985   9.814207e+05   9.885856e+05 7.2e-03  4255.53  4130.81  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 28564789 3670671 30339306   9.814207e+05   9.885856e+05 7.2e-03  4262.81  4137.90  
+ 28617596 3674260 30395641   9.814207e+05   9.885856e+05 7.2e-03  4270.60  4145.44  
+ 28666166 3677785 30446636   9.814207e+05   9.885856e+05 7.2e-03  4277.70  4152.34  
+ 28719592 3682842 30503039   9.814207e+05   9.885856e+05 7.2e-03  4285.72  4160.09  
+ 28768650 3686377 30555373   9.814207e+05   9.885856e+05 7.2e-03  4293.00  4167.20  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 28818933 3690223 30608646   9.814207e+05   9.885856e+05 7.2e-03  4300.42  4174.45  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 28872134 3692819 30664531   9.814207e+05   9.885856e+05 7.2e-03  4308.21  4182.05  
+ 28923210 3695305 30718999   9.814207e+05   9.885856e+05 7.2e-03  4315.72  4189.34  
+ 28973843 3697513 30772969   9.814207e+05   9.885856e+05 7.2e-03  4323.20  4196.61  
+ 29026309 3698895 30828569   9.814207e+05   9.885856e+05 7.2e-03  4330.91  4204.09  
+ 29077333 3700018 30882416   9.814207e+05   9.885856e+05 7.2e-03  4338.38  4211.33  
+ 29127340 3701306 30935098   9.814207e+05   9.885856e+05 7.2e-03  4345.68  4218.43  
+ 29174856 3703960 30985173   9.814207e+05   9.885856e+05 7.2e-03  4352.63  4225.18  
+ 29224345 3707018 31037183   9.814207e+05   9.885856e+05 7.2e-03  4359.90  4232.23  
+ 29277400 3710566 31093636   9.814207e+05   9.885856e+05 7.2e-03  4367.76  4239.92  
+ 29325335 3715237 31144487   9.814207e+05   9.885856e+05 7.2e-03  4374.91  4246.82  
+ 29375166 3720146 31196689   9.814207e+05   9.885856e+05 7.2e-03  4382.27  4253.97  
+ 29425937 3723905 31250591   9.814207e+05   9.885856e+05 7.2e-03  4389.87  4261.34  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 29478989 3727641 31306820   9.814207e+05   9.885856e+05 7.2e-03  4397.91  4269.15  
+ 29528513 3730557 31359401   9.814207e+05   9.885856e+05 7.2e-03  4405.21  4276.25  
+ 29576360 3732386 31409906   9.814207e+05   9.885856e+05 7.2e-03  4412.29  4283.13  
+ 29626515 3734647 31463169   9.814207e+05   9.885856e+05 7.2e-03  4419.79  4290.44  
+ 29676673 3735873 31515958   9.814207e+05   9.885856e+05 7.2e-03  4427.18  4297.66  
+ 29722261 3737548 31564559   9.814207e+05   9.885856e+05 7.2e-03  4434.00  4304.33  
+ 29774912 3738602 31619993   9.814207e+05   9.885856e+05 7.2e-03  4441.89  4312.03  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 29829446 3739561 31677610   9.814207e+05   9.885856e+05 7.2e-03  4449.98  4319.94  
+ 29877728 3741897 31728668   9.814207e+05   9.885856e+05 7.2e-03  4457.13  4326.90  
+ 29930115 3745027 31784417   9.814207e+05   9.885856e+05 7.2e-03  4464.91  4334.49  
+ 29978700 3747309 31836015   9.814207e+05   9.885856e+05 7.2e-03  4472.18  4341.55  
+ 30029184 3749388 31890294   9.814207e+05   9.885856e+05 7.2e-03  4479.73  4348.88  
+Increase node pool size from =128000 to 256000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 30083363 3750677 31948189   9.814207e+05   9.885856e+05 7.2e-03  4487.78  4356.70  
+ 30131821 3752973 31999544   9.814207e+05   9.885856e+05 7.2e-03  4494.94  4363.66  
+ 30178385 3754519 32048558   9.814207e+05   9.885856e+05 7.2e-03  4501.91  4370.42  
+ 30224357 3754510 32097828   9.814207e+05   9.885856e+05 7.2e-03  4508.78  4377.08  
+ 30270513 3755227 32146368   9.814207e+05   9.885856e+05 7.2e-03  4515.72  4383.83  
+ 30318219 3758023 32198816   9.814207e+05   9.885856e+05 7.2e-03  4522.79  4390.65  
+ 30365040 3760614 32248197   9.814207e+05   9.885856e+05 7.2e-03  4529.75  4397.43  
+ 30410771 3762575 32296421   9.814207e+05   9.885856e+05 7.2e-03  4536.54  4404.01  
+ 30456275 3764506 32345834   9.814207e+05   9.885856e+05 7.2e-03  4543.47  4410.62  
+ 30509619 3767989 32402550   9.814207e+05   9.885856e+05 7.2e-03  4551.43  4418.35  
+ 30557508 3769957 32453171   9.814207e+05   9.885856e+05 7.2e-03  4558.48  4425.17  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 30608531 3771688 32507894   9.814207e+05   9.885856e+05 7.2e-03  4566.07  4432.56  
+ 30656323 3772978 32558192   9.814207e+05   9.885856e+05 7.2e-03  4573.19  4439.46  
+ 30699702 3772687 32603902   9.814207e+05   9.885856e+05 7.2e-03  4579.72  4445.77  
+ 30741749 3774222 32648418   9.814207e+05   9.885856e+05 7.2e-03  4586.04  4451.89  
+ 30789242 3775658 32698921   9.814207e+05   9.885856e+05 7.2e-03  4593.21  4458.80  
+ 30833446 3777642 32745409   9.814207e+05   9.885856e+05 7.2e-03  4599.83  4465.20  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 30878853 3779648 32793332   9.814207e+05   9.885856e+05 7.2e-03  4606.65  4471.81  
+ 30927384 3781981 32844769   9.814207e+05   9.885856e+05 7.2e-03  4613.84  4478.78  
+ 30974773 3783715 32895740   9.814207e+05   9.885856e+05 7.2e-03  4620.90  4485.61  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 31023645 3784889 32947218   9.814207e+05   9.885856e+05 7.2e-03  4628.12  4492.59  
+ 31068820 3785868 32995185   9.814207e+05   9.885856e+05 7.2e-03  4634.81  4498.99  
+ 31113651 3787021 33043430   9.814207e+05   9.885856e+05 7.2e-03  4641.41  4505.37  
+ 31161799 3788374 33094605   9.814207e+05   9.885856e+05 7.2e-03  4648.45  4512.18  
+ 31205732 3789501 33141060   9.814207e+05   9.885856e+05 7.2e-03  4655.03  4518.56  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 31252019 3790358 33190090   9.814207e+05   9.885856e+05 7.2e-03  4661.85  4525.14  
+ 31300565 3791109 33241185   9.814207e+05   9.885856e+05 7.2e-03  4668.94  4532.01  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 31345934 3792606 33290150   9.814207e+05   9.885856e+05 7.2e-03  4675.65  4538.51  
+ 31392722 3794547 33341899   9.814207e+05   9.885856e+05 7.2e-03  4682.52  4545.18  
+ 31437453 3796570 33388816   9.814207e+05   9.885856e+05 7.2e-03  4689.14  4551.58  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 31482045 3799071 33435823   9.814207e+05   9.885856e+05 7.2e-03  4695.73  4557.94  
+ 31528380 3801167 33485441   9.814207e+05   9.885856e+05 7.2e-03  4702.56  4564.56  
+ 31575837 3802301 33536010   9.814207e+05   9.885856e+05 7.2e-03  4709.56  4571.34  
+ 31621621 3802912 33584772   9.814207e+05   9.885856e+05 7.2e-03  4716.31  4577.85  
+ 31671563 3802561 33637377   9.814207e+05   9.885856e+05 7.2e-03  4723.71  4585.01  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 31716570 3802922 33684499   9.814207e+05   9.885856e+05 7.2e-03  4730.39  4591.48  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 31765379 3803286 33735954   9.814207e+05   9.885856e+05 7.2e-03  4737.58  4598.49  
+ 31816250 3803687 33791077   9.814207e+05   9.885856e+05 7.2e-03  4745.11  4605.81  
+ 31864213 3803536 33841894   9.814207e+05   9.885856e+05 7.2e-03  4752.17  4612.66  
+ 31916840 3803932 33897298   9.814207e+05   9.885856e+05 7.2e-03  4759.86  4620.13  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 31967446 3804586 33950610   9.814207e+05   9.885856e+05 7.2e-03  4767.25  4627.31  
+ 32012688 3805627 33998814   9.814207e+05   9.885856e+05 7.2e-03  4805.56  4665.39  
+ 32057575 3806734 34046229   9.814207e+05   9.885856e+05 7.2e-03  4812.11  4671.77  
+ 32102422 3807703 34093851   9.814207e+05   9.885856e+05 7.2e-03  4818.67  4678.10  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 32148488 3808292 34142102   9.814207e+05   9.885856e+05 7.2e-03  4825.39  4684.62  
+ 32194775 3807555 34190774   9.814207e+05   9.885856e+05 7.2e-03  4832.14  4691.19  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 32240871 3807126 34238902   9.814207e+05   9.885856e+05 7.2e-03  4838.86  4697.71  
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 32287214 3807086 34288727   9.814207e+05   9.885856e+05 7.2e-03  4845.66  4704.30  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 32331973 3806939 34336020   9.814207e+05   9.885856e+05 7.2e-03  4852.21  4710.65  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =512000 to 1024000 
+
+
+ 33858593 3837327 35948656   9.814207e+05   9.885856e+05 7.2e-03  5100.21  4954.78  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 33905455 3836051 35997630   9.814207e+05   9.885856e+05 7.2e-03  5108.56  4946.29  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 33955205 3834914 36050424   9.814207e+05   9.885856e+05 7.2e-03  5116.46  4953.96  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 34002339 3833908 36100014   9.814207e+05   9.885856e+05 7.2e-03  5122.86  4960.14  
+ 34045114 3833482 36145292   9.814207e+05   9.885856e+05 7.2e-03  5129.97  4967.07  
+ 34093070 3833520 36196500   9.814207e+05   9.885856e+05 7.2e-03  5136.51  4973.39  
+ 34139833 3833890 36245364   9.814207e+05   9.885856e+05 7.2e-03  5143.71  4980.37  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 34186384 3834520 36294381   9.814207e+05   9.885856e+05 7.2e-03  5151.83  4988.28  
+ 34232195 3833714 36343910   9.814207e+05   9.885856e+05 7.2e-03  5161.40  4997.63  
+ 34282324 3834206 36396992   9.814207e+05   9.885856e+05 7.2e-03  5173.11  5009.10  
+ 34329540 3834717 36446373   9.814207e+05   9.885856e+05 7.2e-03  5180.95  5016.69  
+ 34379527 3835634 36499086   9.814207e+05   9.885856e+05 7.2e-03  5187.89  5023.39  
+ 34428019 3835994 36549999   9.814207e+05   9.885856e+05 7.2e-03  5196.98  5032.20  
+ 34476009 3835521 36601144   9.814207e+05   9.885856e+05 7.2e-03  5204.59  5039.55  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 34521625 3835492 36649573   9.814207e+05   9.885856e+05 7.2e-03  5212.59  5047.30  
+ 34571851 3836459 36702416   9.814207e+05   9.885856e+05 7.2e-03  5220.34  5054.79  
+ 34617958 3836243 36750965   9.814207e+05   9.885856e+05 7.2e-03  5230.02  5064.21  
+ 34661729 3836933 36796909   9.814207e+05   9.885856e+05 7.2e-03  5239.20  5073.18  
+ 34708068 3836955 36846480   9.814207e+05   9.885856e+05 7.2e-03  5248.67  5082.41  
+ 34756021 3836445 36896819   9.814207e+05   9.885856e+05 7.2e-03  5267.00  5100.48  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 34803717 3835996 36946900   9.814207e+05   9.885856e+05 7.2e-03  5275.61  5108.84  
+ 34850984 3834832 36996909   9.814207e+05   9.885856e+05 7.2e-03  5283.81  5116.79  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 34900376 3833063 37049020   9.814207e+05   9.885856e+05 7.2e-03  5292.97  5125.68  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 34948053 3831476 37099626   9.814207e+05   9.885856e+05 7.2e-03  5300.49  5132.98  
+ 34992750 3831102 37146784   9.814207e+05   9.885856e+05 7.2e-03  5310.95  5143.19  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 35040920 3830570 37197662   9.814207e+05   9.885856e+05 7.2e-03  5320.12  5152.09  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 35085138 3831044 37244179   9.814207e+05   9.885856e+05 7.2e-03  5326.77  5158.49  
+ 35135118 3831829 37296088   9.814207e+05   9.885856e+05 7.2e-03  5334.56  5165.99  
+ 35186635 3833363 37350162   9.814207e+05   9.885856e+05 7.2e-03  5344.92  5176.09  
+ 35235417 3834150 37401787   9.814207e+05   9.885856e+05 7.2e-03  5352.30  5183.22  
+ 35282047 3834062 37450613   9.814207e+05   9.885856e+05 7.2e-03  5359.85  5190.53  
+ 35329891 3833468 37501836   9.814207e+05   9.885856e+05 7.2e-03  5369.68  5200.13  
+ 35380416 3833539 37554898   9.814207e+05   9.885856e+05 7.2e-03  5379.82  5210.05  
+ 35430768 3831583 37608274   9.814207e+05   9.885856e+05 7.2e-03  5387.04  5217.02  
+ 35479902 3829540 37660338   9.814207e+05   9.885856e+05 7.2e-03  5399.23  5228.96  
+ 35532082 3826560 37715285   9.814207e+05   9.885856e+05 7.2e-03  5413.89  5243.38  
+ 35583806 3825586 37769685   9.814207e+05   9.885856e+05 7.2e-03  5434.38  5263.60  
+ 35631510 3825426 37819953   9.814207e+05   9.885856e+05 7.2e-03  5441.98  5270.99  
+ 35681870 3825911 37874778   9.814207e+05   9.885856e+05 7.2e-03  5451.51  5280.27  
+ 35728490 3827447 37923694   9.814207e+05   9.885856e+05 7.2e-03  5481.36  5309.88  
+ 35774858 3828165 37972189   9.814207e+05   9.885856e+05 7.2e-03  5488.24  5316.55  
+ 35821503 3828277 38021233   9.814207e+05   9.885856e+05 7.2e-03  5500.75  5328.83  
+ 35868764 3828447 38070704   9.814207e+05   9.885856e+05 7.2e-03  5508.47  5336.30  
+ 35919379 3828473 38124152   9.814207e+05   9.885856e+05 7.2e-03  5520.39  5347.97  
+ 35967265 3826728 38174723   9.814207e+05   9.885856e+05 7.2e-03  5528.70  5356.03  
+ 36013131 3824865 38223014   9.814207e+05   9.885856e+05 7.2e-03  5538.14  5365.28  
+ 36061078 3824052 38273560   9.814207e+05   9.885856e+05 7.2e-03  5550.18  5377.10  
+ 36110289 3823437 38326137   9.814207e+05   9.885856e+05 7.2e-03  5557.05  5383.74  
+ 36158795 3823381 38378468   9.814207e+05   9.885856e+05 7.2e-03  5580.65  5407.10  
+ 36206837 3822085 38430011   9.814207e+05   9.885856e+05 7.2e-03  5589.93  5416.16  
+ 36256713 3820980 38482555   9.814207e+05   9.885856e+05 7.2e-03  5598.60  5424.59  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 36308403 3819625 38537826   9.814207e+05   9.885856e+05 7.2e-03  5605.57  5431.32  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 36355589 3818455 38587397   9.814207e+05   9.885856e+05 7.2e-03  5612.05  5437.57  
+ 36401868 3817441 38636204   9.814207e+05   9.885856e+05 7.2e-03  5620.25  5445.50  
+ 36452824 3816683 38690676   9.814207e+05   9.885856e+05 7.2e-03  5628.91  5453.91  
+ 36498469 3816297 38738655   9.814207e+05   9.885856e+05 7.2e-03  5635.57  5460.33  
+ 36546347 3816491 38789005   9.814207e+05   9.885856e+05 7.2e-03  5642.41  5466.91  
+ 36594007 3816009 38839454   9.814207e+05   9.885856e+05 7.2e-03  5649.23  5473.50  
+ 36639569 3814631 38887886   9.814207e+05   9.885856e+05 7.2e-03  5656.18  5480.24  
+ 36686304 3813936 38938546   9.814207e+05   9.885856e+05 7.2e-03  5662.79  5486.65  
+ 36730443 3813194 38985425   9.814207e+05   9.885856e+05 7.2e-03  5670.07  5493.61  
+ 36780550 3812004 39039281   9.814207e+05   9.885856e+05 7.2e-03  5677.97  5501.29  
+ 36827545 3811409 39088946   9.814207e+05   9.885856e+05 7.2e-03  5685.46  5508.56  
+ 36878740 3810367 39143222   9.814207e+05   9.885856e+05 7.2e-03  5692.66  5515.55  
+ 36926520 3809766 39194361   9.814207e+05   9.885856e+05 7.2e-03  5700.97  5523.58  
+ 36971422 3809122 39242089   9.814207e+05   9.885856e+05 7.2e-03  5708.43  5530.75  
+ 37018243 3807539 39291658   9.814207e+05   9.885856e+05 7.2e-03  5714.31  5536.43  
+ 37070908 3805582 39346765   9.814207e+05   9.885856e+05 7.2e-03  5721.04  5542.95  
+ 37114920 3804174 39393184   9.814207e+05   9.885856e+05 7.2e-03  5726.70  5548.41  
+ 37158654 3803067 39439132   9.814207e+05   9.885856e+05 7.2e-03  5732.36  5553.87  
+ 37206331 3801197 39490176   9.814207e+05   9.885856e+05 7.2e-03  5738.55  5559.85  
+ 37252880 3799186 39539511   9.814207e+05   9.885856e+05 7.2e-03  5744.62  5565.71  
+ 37294463 3796920 39583229   9.814207e+05   9.885856e+05 7.2e-03  5750.14  5571.03  
+ 37340619 3794759 39632529   9.814207e+05   9.885856e+05 7.2e-03  5756.26  5576.95  
+ 37385671 3793834 39679764   9.814207e+05   9.885856e+05 7.2e-03  5762.21  5582.68  
+ 37432804 3792661 39730059   9.814207e+05   9.885856e+05 7.2e-03  5768.38  5588.63  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 37479541 3790816 39779340   9.814207e+05   9.885856e+05 7.2e-03  5774.52  5594.55  
+ 37525307 3788679 39828322   9.814207e+05   9.885856e+05 7.2e-03  5780.50  5600.33  
+ 37571614 3786721 39877799   9.814207e+05   9.885856e+05 7.2e-03  5786.54  5606.15  
+ 37617789 3784795 39926572   9.814207e+05   9.885856e+05 7.2e-03  5792.63  5612.00  
+ 37662489 3781989 39974549   9.814207e+05   9.885856e+05 7.2e-03  5798.51  5617.66  
+ 37708299 3778228 40022714   9.814207e+05   9.885856e+05 7.2e-03  5804.52  5623.48  
+ 37758999 3774890 40076194   9.814207e+05   9.885856e+05 7.2e-03  5811.17  5629.90  
+ 37803643 3772636 40123353   9.814207e+05   9.885856e+05 7.2e-03  5817.03  5635.54  
+ 37846113 3771527 40167744   9.814207e+05   9.885856e+05 7.2e-03  5822.68  5640.97  
+ 37891363 3769833 40215382   9.814207e+05   9.885856e+05 7.2e-03  5828.74  5646.81  
+ 37933108 3768206 40259158   9.814207e+05   9.885856e+05 7.2e-03  5834.32  5652.20  
+ 37976324 3766716 40304515   9.814207e+05   9.885856e+05 7.2e-03  5840.09  5657.77  
+ 38022006 3765737 40352543   9.814207e+05   9.885856e+05 7.2e-03  5846.20  5663.65  
+ 38066362 3764075 40400235   9.814207e+05   9.885856e+05 7.2e-03  5852.10  5669.36  
+ 38108398 3762470 40445183   9.814207e+05   9.885856e+05 7.2e-03  5857.69  5674.75  
+ 38127553 3762138 40465702   9.814207e+05   9.885856e+05 7.2e-03  5860.29  5677.21  
+ 38170209 3761749 40510773   9.814207e+05   9.885856e+05 7.2e-03  5866.07  5682.69  
+ 38212625 3759961 40555412   9.814207e+05   9.885856e+05 7.2e-03  5871.77  5688.18  
+ 38261577 3757986 40606924   9.814207e+05   9.885856e+05 7.2e-03  5878.28  5694.47  
+ 38311129 3756475 40659461   9.814207e+05   9.885856e+05 7.2e-03  5884.85  5700.83  
+ 38357528 3754849 40708330   9.814207e+05   9.885856e+05 7.2e-03  5891.06  5706.83  
+ 38403563 3751789 40757191   9.814207e+05   9.885856e+05 7.2e-03  5897.16  5712.74  
+ 38449393 3748973 40805682   9.814207e+05   9.885856e+05 7.2e-03  5903.25  5718.63  
+ 38461934 3748269 40818978   9.814207e+05   9.885856e+05 7.2e-03  5905.02  5720.24  
+ 38503926 3746474 40864734   9.814207e+05   9.885856e+05 7.2e-03  5911.08  5725.69  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 38544262 3745491 40907387   9.814207e+05   9.885856e+05 7.2e-03  5916.48  5730.89  
+ 38557093 3745333 40920762   9.814207e+05   9.885856e+05 7.2e-03  5918.25  5732.55  
+ 38600562 3744983 40966917   9.814207e+05   9.885856e+05 7.2e-03  5924.15  5738.17  
+ 38646030 3745352 41015084   9.814207e+05   9.885856e+05 7.2e-03  5930.22  5744.02  
+ 38689552 3744889 41061051   9.814207e+05   9.885856e+05 7.2e-03  5936.08  5749.67  
+ 38723269 3743791 41096798   9.814207e+05   9.885856e+05 7.2e-03  5940.64  5754.03  
+ 38749131 3743606 41124315   9.814207e+05   9.885856e+05 7.2e-03  5944.19  5757.35  
+ 38786176 3744701 41163711   9.814207e+05   9.885856e+05 7.2e-03  5949.29  5762.10  
+ 38828590 3746597 41208844   9.814207e+05   9.885856e+05 7.2e-03  5955.07  5767.62  
+ 38870084 3748089 41253715   9.814207e+05   9.885856e+05 7.2e-03  5960.69  5773.05  
+ 38911182 3748358 41297929   9.814207e+05   9.885856e+05 7.2e-03  5966.28  5778.43  
+ 38954053 3749034 41343769   9.814207e+05   9.885856e+05 7.2e-03  5972.14  5784.09  
+ 39000290 3750634 41392964   9.814207e+05   9.885856e+05 7.2e-03  5978.48  5790.22  
+ 39043927 3752809 41439658   9.814207e+05   9.885856e+05 7.2e-03  5984.49  5796.04  
+ 39090333 3753901 41489359   9.814207e+05   9.885856e+05 7.2e-03  5990.94  5802.25  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 40286079 3826119 42767830   9.814207e+05   9.885856e+05 7.2e-03  6152.53  5960.15  
+ 40332243 3828031 42817297   9.814207e+05   9.885856e+05 7.2e-03  6158.98  5966.23  
+ 40375551 3829344 42863377   9.814207e+05   9.885856e+05 7.2e-03  6164.87  5971.92  
+ 40416119 3831276 42908107   9.814207e+05   9.885856e+05 7.2e-03  6170.54  5977.29  
+ 40456508 3833267 42950625   9.814207e+05   9.885856e+05 7.2e-03  6176.05  5982.61  
+ 40496879 3835845 42993922   9.814207e+05   9.885856e+05 7.2e-03  6181.59  5987.97  
+ 40542989 3839022 43042639   9.814207e+05   9.885856e+05 7.2e-03  6187.89  5994.05  
+ 40586556 3841687 43089613   9.814207e+05   9.885856e+05 7.2e-03  6193.83  5999.79  
+ 40627684 3844696 43134164   9.814207e+05   9.885856e+05 7.2e-03  6199.38  6005.15  
+ 40670922 3847377 43180215   9.814207e+05   9.885856e+05 7.2e-03  6205.14  6010.73  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 40711649 3849579 43223711   9.814207e+05   9.885856e+05 7.2e-03  6210.54  6015.94  
+ 40756279 3851903 43272009   9.814207e+05   9.885856e+05 7.2e-03  6216.46  6021.67  
+ 40799609 3854721 43317936   9.814207e+05   9.885856e+05 7.2e-03  6222.26  6027.28  
+ 40845310 3857640 43366950   9.814207e+05   9.885856e+05 7.2e-03  6228.39  6033.21  
+ 40886289 3859909 43410481   9.814207e+05   9.885856e+05 7.2e-03  6233.90  6038.53  
+ 40931749 3862670 43460168   9.814207e+05   9.885856e+05 7.2e-03  6240.06  6044.47  
+ 40973594 3864836 43504691   9.814207e+05   9.885856e+05 7.2e-03  6245.79  6049.93  
+ 41017446 3865394 43551187   9.814207e+05   9.885856e+05 7.2e-03  6251.69  6055.61  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 41688081 3892955 44268292   9.814207e+05   9.885856e+05 7.2e-03  6342.68  6144.51  
+ 41728426 3894981 44311588   9.814207e+05   9.885856e+05 7.2e-03  6348.54  6150.00  
+ 41743790 3895941 44327785   9.814207e+05   9.885856e+05 7.2e-03  6350.74  6152.07  
+ 41785502 3899466 44372108   9.814207e+05   9.885856e+05 7.2e-03  6356.65  6157.72  
+ 41828924 3902007 44418965   9.814207e+05   9.885856e+05 7.2e-03  6362.71  6163.56  
+ 41866941 3904096 44459101   9.814207e+05   9.885856e+05 7.2e-03  6368.01  6168.67  
+ 41906336 3906289 44500989   9.814207e+05   9.885856e+05 7.2e-03  6373.55  6174.01  
+ 41950537 3908542 44549496   9.814207e+05   9.885856e+05 7.2e-03  6379.75  6180.00  
+ 41994075 3911297 44596324   9.814207e+05   9.885856e+05 7.2e-03  6385.86  6185.90  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 42398641 3954229 45026639   9.814207e+05   9.885856e+05 7.2e-03  6442.21  6240.97  
+ 42440469 3960275 45071098   9.814207e+05   9.885856e+05 7.2e-03  6448.30  6246.73  
+ 42479189 3965459 45112820   9.814207e+05   9.885856e+05 7.2e-03  6453.83  6252.08  
+ 42518105 3969985 45153927   9.814207e+05   9.885856e+05 7.2e-03  6459.42  6257.46  
+ 42555195 3973266 45193942   9.814207e+05   9.885856e+05 7.2e-03  6464.73  6262.58  
+ 42594665 3976728 45236203   9.814207e+05   9.885856e+05 7.2e-03  6470.36  6268.02  
+ 42631105 3980370 45275376   9.814207e+05   9.885856e+05 7.2e-03  6475.48  6272.93  
+ 42672663 3984684 45320204   9.814207e+05   9.885856e+05 7.2e-03  6481.34  6278.58  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 42712433 3988635 45362653   9.814207e+05   9.885856e+05 7.2e-03  6486.95  6283.97  
+ 42750156 3991801 45402524   9.814207e+05   9.885856e+05 7.2e-03  6492.27  6289.10  
+ 42789177 3994841 45444298   9.814207e+05   9.885856e+05 7.2e-03  6497.76  6294.39  
+ 42826277 3997712 45484000   9.814207e+05   9.885856e+05 7.2e-03  6502.96  6299.43  
+ 42867517 4001598 45527826   9.814207e+05   9.885856e+05 7.2e-03  6508.75  6305.01  
+ 42905514 4005501 45568291   9.814207e+05   9.885856e+05 7.2e-03  6514.10  6310.17  
+ 42947463 4010736 45613897   9.814207e+05   9.885856e+05 7.2e-03  6519.95  6315.82  
+ 42986799 4015393 45655262   9.814207e+05   9.885856e+05 7.2e-03  6525.45  6321.12  
+ 43028629 4020346 45699934   9.814207e+05   9.885856e+05 7.2e-03  6531.39  6326.83  
+ 43066763 4024556 45740490   9.814207e+05   9.885856e+05 7.2e-03  6536.80  6332.07  
+ 43104447 4028177 45780724   9.814207e+05   9.885856e+05 7.2e-03  6542.10  6337.19  
+ 43142756 4031547 45822683   9.814207e+05   9.885856e+05 7.2e-03  6547.50  6342.32  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 43182462 4035609 45865507   9.814207e+05   9.885856e+05 7.2e-03  6552.98  6347.61  
+ 43230819 4040270 45916640   9.814207e+05   9.885856e+05 7.2e-03  6559.68  6354.09  
+ 43270062 4044016 45957891   9.814207e+05   9.885856e+05 7.2e-03  6565.14  6359.33  
+ 43318026 4048000 46008472   9.814207e+05   9.885856e+05 7.2e-03  6571.82  6365.81  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 43355704 4051687 46049715   9.814207e+05   9.885856e+05 7.2e-03  6577.21  6370.91  
+ 43396486 4055925 46093602   9.814207e+05   9.885856e+05 7.2e-03  6582.88  6376.36  
+ 43433604 4059486 46133567   9.814207e+05   9.885856e+05 7.2e-03  6588.02  6381.30  
+ 43474938 4062958 46177604   9.814207e+05   9.885856e+05 7.2e-03  6593.77  6386.87  
+ 43515195 4067672 46221212   9.814207e+05   9.885856e+05 7.2e-03  6599.34  6392.23  
+ 43556451 4070868 46265275   9.814207e+05   9.885856e+05 7.2e-03  6605.07  6397.75  
+ 43597462 4074031 46309495   9.814207e+05   9.885856e+05 7.2e-03  6610.75  6403.24  
+ 43633850 4077181 46348564   9.814207e+05   9.885856e+05 7.2e-03  6615.84  6408.13  
+ 43673390 4079405 46390496   9.814207e+05   9.885856e+05 7.2e-03  6621.42  6413.50  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 43710726 4082295 46430030   9.814207e+05   9.885856e+05 7.2e-03  6626.67  6418.56  
+ 43749552 4084800 46470733   9.814207e+05   9.885856e+05 7.2e-03  6632.09  6423.79  
+ 43788009 4086773 46511293   9.814207e+05   9.885856e+05 7.2e-03  6637.42  6428.81  
+ 43825735 4088565 46551620   9.814207e+05   9.885856e+05 7.2e-03  6642.62  6433.81  
+ 43862685 4090489 46590616   9.814207e+05   9.885856e+05 7.2e-03  6647.67  6438.66  
+ 43900308 4093354 46629976   9.814207e+05   9.885856e+05 7.2e-03  6652.79  6443.60  
+ 43940511 4095868 46672129   9.814207e+05   9.885856e+05 7.2e-03  6658.27  6448.86  
+ 43975870 4097972 46709273   9.814207e+05   9.885856e+05 7.2e-03  6663.09  6453.48  
+ 44014068 4099988 46749774   9.814207e+05   9.885856e+05 7.2e-03  6668.32  6458.50  
+ 44051104 4102599 46789019   9.814207e+05   9.885856e+05 7.2e-03  6673.44  6463.39  
+ 44089898 4104794 46830234   9.814207e+05   9.885856e+05 7.2e-03  6678.78  6468.53  
+ 44131753 4107767 46874418   9.814207e+05   9.885856e+05 7.2e-03  6684.54  6474.07  
+ 44166289 4109314 46910527   9.814207e+05   9.885856e+05 7.2e-03  6689.32  6478.66  
+ 44207414 4110288 46954153   9.814207e+05   9.885856e+05 7.2e-03  6694.96  6484.11  
+ 44246374 4112007 46995167   9.814207e+05   9.885856e+05 7.2e-03  6700.31  6489.28  
+ 44292132 4113726 47043676   9.814207e+05   9.885856e+05 7.2e-03  6706.72  6495.47  
+ 44329903 4115409 47083940   9.814207e+05   9.885856e+05 7.2e-03  6712.02  6500.57  
+ 44367243 4117268 47123469   9.814207e+05   9.885856e+05 7.2e-03  6717.21  6505.56  
+ 44402241 4118577 47160618   9.814207e+05   9.885856e+05 7.2e-03  6722.13  6510.27  
+ 44437986 4120409 47199423   9.814207e+05   9.885856e+05 7.2e-03  6727.08  6515.04  
+ 44483162 4121780 47247215   9.814207e+05   9.885856e+05 7.2e-03  6733.38  6521.16  
+ 44525543 4122574 47293321   9.814207e+05   9.885856e+05 7.2e-03  6739.37  6526.95  
+Increase node pool size from =256000 to 512000 
+
+
+ 44565916 4123599 47336504   9.814207e+05   9.885856e+05 7.2e-03  6745.06  6532.45  
+ 44600514 4125163 47373845   9.814207e+05   9.885856e+05 7.2e-03  6749.95  6537.15  
+ 44636814 4127802 47412423   9.814207e+05   9.885856e+05 7.2e-03  6755.03  6542.03  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 44656861 4129102 47433425   9.814207e+05   9.885856e+05 7.2e-03  6757.87  6544.72  
+Increase node pool size from =256000 to 512000 
+
+
+ 44696117 4132210 47476200   9.814207e+05   9.885856e+05 7.2e-03  6763.46  6550.03  
+ 44731904 4135541 47513988   9.814207e+05   9.885856e+05 7.2e-03  6768.56  6554.90  
+ 44771262 4138907 47555633   9.814207e+05   9.885856e+05 7.2e-03  6774.12  6560.26  
+ 44808372 4142772 47595324   9.814207e+05   9.885856e+05 7.2e-03  6779.35  6565.30  
+ 44848608 4145913 47637787   9.814207e+05   9.885856e+05 7.2e-03  6784.97  6570.71  
+ 44885068 4148811 47676217   9.814207e+05   9.885856e+05 7.2e-03  6790.05  6575.58  
+Increase node pool size from =256000 to 512000 
+
+
+ 44922296 4151043 47715835   9.814207e+05   9.885856e+05 7.2e-03  6795.20  6580.53  
+ 44960031 4152736 47755931   9.814207e+05   9.885856e+05 7.2e-03  6800.40  6585.52  
+ 44999836 4154354 47798280   9.814207e+05   9.885856e+05 7.2e-03  6805.92  6590.85  
+ 45038316 4156951 47839116   9.814207e+05   9.885856e+05 7.2e-03  6811.28  6596.01  
+ 45076652 4159906 47879407   9.814207e+05   9.885856e+05 7.2e-03  6816.64  6601.17  
+ 45118015 4162487 47923169   9.814207e+05   9.885856e+05 7.2e-03  6822.43  6606.76  
+ 45156449 4165351 47964314   9.814207e+05   9.885856e+05 7.2e-03  6827.83  6611.96  
+ 45191798 4167891 48001646   9.814207e+05   9.885856e+05 7.2e-03  6832.76  6616.70  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 45224393 4169988 48036580   9.814207e+05   9.885856e+05 7.2e-03  6837.33  6621.08  
+ 45263350 4173087 48078066   9.814207e+05   9.885856e+05 7.2e-03  6842.78  6626.35  
+ 45301289 4175462 48118023   9.814207e+05   9.885856e+05 7.2e-03  6848.09  6631.45  
+ 45341463 4178584 48160447   9.814207e+05   9.885856e+05 7.2e-03  6853.71  6636.86  
+ 45376490 4179759 48197600   9.814207e+05   9.885856e+05 7.2e-03  6858.65  6641.61  
+ 45414642 4182657 48237623   9.814207e+05   9.885856e+05 7.2e-03  6864.02  6646.79  
+Increase node pool size from =256000 to 512000 
+
+
+ 45451102 4185026 48277099   9.814207e+05   9.885856e+05 7.2e-03  6869.15  6651.73  
+ 45496222 4187226 48325202   9.814207e+05   9.885856e+05 7.2e-03  6875.33  6657.68  
+ 45539093 4190280 48370768   9.814207e+05   9.885856e+05 7.2e-03  6881.19  6663.32  
+Increase node pool size from =256000 to 512000 
+
+
+ 45572417 4192804 48406634   9.814207e+05   9.885856e+05 7.2e-03  6885.78  6667.69  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 45607859 4195225 48445226   9.814207e+05   9.885856e+05 7.2e-03  6890.56  6672.28  
+ 45642740 4197506 48482079   9.814207e+05   9.885856e+05 7.2e-03  6895.26  6676.79  
+ 45683247 4199707 48525218   9.814207e+05   9.885856e+05 7.2e-03  6900.79  6682.11  
+Increase node pool size from =256000 to 512000 
+
+
+ 45717644 4201274 48561711   9.814207e+05   9.885856e+05 7.2e-03  6905.53  6686.67  
+ 45760513 4203722 48608117   9.814207e+05   9.885856e+05 7.2e-03  6911.39  6692.32  
+Increase node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 45793825 4205500 48643378   9.814207e+05   9.885856e+05 7.2e-03  6915.96  6696.69  
+ 45830563 4208160 48682397   9.814207e+05   9.885856e+05 7.2e-03  6920.98  6701.51  
+Increase node pool size from =256000 to 512000 
+
+
+ 45872370 4211939 48726643   9.814207e+05   9.885856e+05 7.2e-03  6926.62  6706.94  
+ 45911409 4215030 48768317   9.814207e+05   9.885856e+05 7.2e-03  6931.98  6712.08  
+ 45949045 4217732 48808177   9.814207e+05   9.885856e+05 7.2e-03  6937.15  6717.01  
+ 45985457 4220312 48846600   9.814207e+05   9.885856e+05 7.2e-03  6942.20  6721.84  
+ 46023816 4223673 48887542   9.814207e+05   9.885856e+05 7.2e-03  6947.47  6726.90  
+ 46060972 4226418 48927608   9.814207e+05   9.885856e+05 7.2e-03  6952.64  6731.86  
+ 46101156 4230296 48971086   9.814207e+05   9.885856e+05 7.2e-03  6958.39  6737.40  
+ 46143485 4233959 49016464   9.814207e+05   9.885856e+05 7.2e-03  6964.38  6743.17  
+ 46177195 4235554 49052553   9.814207e+05   9.885856e+05 7.2e-03  6969.08  6747.68  
+Increase node pool size from =256000 to 512000 
+
+
+ 46218155 4238033 49097002   9.814207e+05   9.885856e+05 7.2e-03  6974.75  6753.13  
+Increase node pool size from =256000 to 512000 
+
+
+ 46262678 4241942 49144169   9.814207e+05   9.885856e+05 7.2e-03  6980.94  6759.10  
+ 46302152 4245076 49186024   9.814207e+05   9.885856e+05 7.2e-03  6986.44  6764.39  
+ 46345193 4248915 49231542   9.814207e+05   9.885856e+05 7.2e-03  6992.41  6770.13  
+ 46384991 4252187 49273491   9.814207e+05   9.885856e+05 7.2e-03  6997.97  6775.48  
+ 46425638 4256106 49317324   9.814207e+05   9.885856e+05 7.2e-03  7003.68  6780.97  
+ 46461700 4260005 49355825   9.814207e+05   9.885856e+05 7.2e-03  7008.74  6785.84  
+ 46499157 4263219 49396980   9.814207e+05   9.885856e+05 7.2e-03  7013.95  6790.85  
+ 46539779 4266429 49440546   9.814207e+05   9.885856e+05 7.2e-03  7019.61  6796.28  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 46577746 4270197 49481150   9.814207e+05   9.885856e+05 7.2e-03  7024.94  6801.41  
+ 46617220 4272712 49522858   9.814207e+05   9.885856e+05 7.2e-03  7030.53  6806.79  
+Increase node pool size from =256000 to 512000 
+
+
+ 46659331 4274919 49567829   9.814207e+05   9.885856e+05 7.2e-03  7036.47  6812.51  
+ 46700729 4278129 49611780   9.814207e+05   9.885856e+05 7.2e-03  7042.29  6818.12  
+ 46741853 4280945 49656338   9.814207e+05   9.885856e+05 7.2e-03  7048.09  6823.71  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 46779148 4284437 49696140   9.814207e+05   9.885856e+05 7.2e-03  7053.30  6828.71  
+Increase node pool size from =256000 to 512000 
+
+
+ 46817128 4288409 49736444   9.814207e+05   9.885856e+05 7.2e-03  7058.62  6833.83  
+ 46853883 4292586 49775317   9.814207e+05   9.885856e+05 7.2e-03  7063.83  6838.84  
+ 46895564 4296481 49819150   9.814207e+05   9.885856e+05 7.2e-03  7069.74  6844.55  
+ 46931716 4298711 49857158   9.814207e+05   9.885856e+05 7.2e-03  7074.87  6849.48  
+ 46967409 4301084 49895085   9.814207e+05   9.885856e+05 7.2e-03  7079.93  6854.34  
+ 47008518 4303961 49939218   9.814207e+05   9.885856e+05 7.2e-03  7085.81  6860.02  
+ 47043032 4306723 49975715   9.814207e+05   9.885856e+05 7.2e-03  7090.75  6864.77  
+Increase node pool size from =256000 to 512000 
+
+
+ 47075622 4308952 50010272   9.814207e+05   9.885856e+05 7.2e-03  7095.39  6869.23  
+ 47111653 4312038 50049640   9.814207e+05   9.885856e+05 7.2e-03  7100.52  6874.17  
+ 47149938 4315504 50090676   9.814207e+05   9.885856e+05 7.2e-03  7106.00  6879.45  
+ 47185187 4319661 50128296   9.814207e+05   9.885856e+05 7.2e-03  7111.11  6884.19  
+ 47222966 4322694 50167959   9.814207e+05   9.885856e+05 7.2e-03  7116.53  6889.41  
+ 47261668 4326002 50209017   9.814207e+05   9.885856e+05 7.2e-03  7122.06  6894.76  
+ 47297948 4329473 50247393   9.814207e+05   9.885856e+05 7.2e-03  7127.25  6899.76  
+ 47334295 4331968 50286430   9.814207e+05   9.885856e+05 7.2e-03  7132.43  6904.74  
+ 47372523 4335226 50326634   9.814207e+05   9.885856e+05 7.2e-03  7137.89  6909.97  
+ 47406797 4337723 50363854   9.814207e+05   9.885856e+05 7.2e-03  7142.81  6914.72  
+ 47441371 4340638 50400588   9.814207e+05   9.885856e+05 7.2e-03  7147.79  6919.52  
+ 47480672 4342926 50442352   9.814207e+05   9.885856e+05 7.2e-03  7153.49  6924.98  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 47516116 4345212 50479662   9.814207e+05   9.885856e+05 7.2e-03  7158.62  6929.91  
+Increase node pool size from =256000 to 512000 
+
+
+ 47553506 4348189 50519167   9.814207e+05   9.885856e+05 7.2e-03  7164.03  6935.11  
+ 47593009 4351116 50561130   9.814207e+05   9.885856e+05 7.2e-03  7169.71  6940.58  
+Increase node pool size from =256000 to 512000 
+
+
+ 47631460 4353385 50602540   9.814207e+05   9.885856e+05 7.2e-03  7175.27  6945.94  
+ 47675180 4356006 50649358   9.814207e+05   9.885856e+05 7.2e-03  7181.70  6952.02  
+ 47711205 4358370 50688452   9.814207e+05   9.885856e+05 7.2e-03  7186.94  6957.02  
+ 47748412 4360418 50728310   9.814207e+05   9.885856e+05 7.2e-03  7192.28  6962.14  
+Increase node pool size from =256000 to 512000 
+
+
+ 47782709 4362830 50765010   9.814207e+05   9.885856e+05 7.2e-03  7197.20  6966.85  
+ 47817554 4365099 50801534   9.814207e+05   9.885856e+05 7.2e-03  7202.11  6971.57  
+ 47855712 4368158 50842375   9.814207e+05   9.885856e+05 7.2e-03  7207.60  6976.83  
+ 47893229 4371586 50882865   9.814207e+05   9.885856e+05 7.2e-03  7213.01  6982.03  
+ 47927378 4374118 50918957   9.814207e+05   9.885856e+05 7.2e-03  7217.94  6986.77  
+ 47965854 4377073 50959761   9.814207e+05   9.885856e+05 7.2e-03  7223.49  6992.12  
+ 48002080 4379962 50998163   9.814207e+05   9.885856e+05 7.2e-03  7228.69  6997.13  
+ 48040166 4382392 51039549   9.814207e+05   9.885856e+05 7.2e-03  7234.13  7002.37  
+ 48073911 4384960 51074895   9.814207e+05   9.885856e+05 7.2e-03  7238.96  7006.99  
+ 48108989 4386367 51112145   9.814207e+05   9.885856e+05 7.2e-03  7244.03  7011.86  
+ 48147724 4387848 51152813   9.814207e+05   9.885856e+05 7.2e-03  7249.63  7017.27  
+ 48187675 4389947 51195218   9.814207e+05   9.885856e+05 7.2e-03  7255.34  7022.78  
+ 48227667 4392630 51238068   9.814207e+05   9.885856e+05 7.2e-03  7261.03  7028.26  
+ 48272256 4395641 51285294   9.814207e+05   9.885856e+05 7.2e-03  7267.38  7034.38  
+ 48320261 4398632 51335943   9.814207e+05   9.885856e+05 7.2e-03  7274.21  7040.96  
+ 48363659 4401481 51381740   9.814207e+05   9.885856e+05 7.2e-03  7280.38  7046.91  
+ 48398060 4403280 51418667   9.814207e+05   9.885856e+05 7.2e-03  7285.22  7051.56  
+ 48435739 4405526 51458900   9.814207e+05   9.885856e+05 7.2e-03  7290.56  7056.64  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 48474828 4407506 51500379   9.814207e+05   9.885856e+05 7.2e-03  7296.10  7061.94  
+Increase node pool size from =256000 to 512000 
+
+
+ 48513288 4409711 51540749   9.814207e+05   9.885856e+05 7.2e-03  7301.53  7067.16  
+Increase node pool size from =256000 to 512000 
+
+
+ 48547098 4411418 51577160   9.814207e+05   9.885856e+05 7.2e-03  7306.38  7071.79  
+ 48586158 4413516 51618345   9.814207e+05   9.885856e+05 7.2e-03  7311.95  7077.16  
+Increase node pool size from =256000 to 512000 
+
+
+Increase node pool size from =256000 to 512000 
+
+
+ 49318973 4461329 52400038   9.814207e+05   9.885856e+05 7.2e-03  7415.15  7177.98  
+ 49358433 4463142 52442035   9.814207e+05   9.885856e+05 7.2e-03  7420.92  7183.36  
+ 49391729 4465243 52477632   9.814207e+05   9.885856e+05 7.2e-03  7425.66  7187.91  
+ 49430682 4467603 52519451   9.814207e+05   9.885856e+05 7.2e-03  7431.16  7193.19  
+Increase node pool size from =256000 to 512000 
+
+
+ 49468788 4469277 52559643   9.814207e+05   9.885856e+05 7.2e-03  7436.56  7198.36  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 49511814 4471973 52605476   9.814207e+05   9.885856e+05 7.2e-03  7442.56  7204.14  
+ 49554696 4474634 52650971   9.814207e+05   9.885856e+05 7.2e-03  7448.50  7209.86  
+Increase node pool size from =256000 to 512000 
+
+
+ 49591570 4476854 52689882   9.814207e+05   9.885856e+05 7.2e-03  7453.69  7214.82  
+ 49635505 4479624 52735983   9.814207e+05   9.885856e+05 7.2e-03  7459.91  7220.81  
+ 49669131 4482293 52771652   9.814207e+05   9.885856e+05 7.2e-03  7464.70  7225.38  
+ 49701220 4485050 52805512   9.814207e+05   9.885856e+05 7.2e-03  7469.24  7229.72  
+ 49734991 4486882 52841226   9.814207e+05   9.885856e+05 7.2e-03  7474.00  7234.30  
+Increase node pool size from =256000 to 512000 
+
+
+ 49772423 4489409 52880381   9.814207e+05   9.885856e+05 7.2e-03  7479.30  7239.40  
+ 49809409 4492169 52919520   9.814207e+05   9.885856e+05 7.2e-03  7484.55  7244.45  
+ 49842363 4494462 52954171   9.814207e+05   9.885856e+05 7.2e-03  7489.24  7248.95  
+ 49877783 4497713 52991217   9.814207e+05   9.885856e+05 7.2e-03  7494.23  7253.76  
+ 49918384 4501539 53034571   9.814207e+05   9.885856e+05 7.2e-03  7499.94  7259.25  
+ 49956858 4504962 53076116   9.814207e+05   9.885856e+05 7.2e-03  7505.35  7264.46  
+ 49999101 4507951 53120772   9.814207e+05   9.885856e+05 7.2e-03  7511.28  7270.18  
+ 50044369 4511847 53168671   9.814207e+05   9.885856e+05 7.2e-03  7517.66  7276.33  
+ 50095260 4515326 53221987   9.814207e+05   9.885856e+05 7.2e-03  7524.78  7283.19  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 50144458 4518369 53273628   9.814207e+05   9.885856e+05 7.2e-03  7531.77  7289.93  
+ 50180589 4519941 53312243   9.814207e+05   9.885856e+05 7.2e-03  7536.87  7294.83  
+ 50218093 4521939 53352127   9.814207e+05   9.885856e+05 7.2e-03  7542.15  7299.91  
+ 50254069 4524365 53389931   9.814207e+05   9.885856e+05 7.2e-03  7547.17  7304.73  
+ 50290173 4527141 53428792   9.814207e+05   9.885856e+05 7.2e-03  7552.22  7309.59  
+ 50329656 4530461 53470470   9.814207e+05   9.885856e+05 7.2e-03  7557.69  7314.85  
+ 50366363 4532889 53509802   9.814207e+05   9.885856e+05 7.2e-03  7562.89  7319.85  
+ 50400216 4534663 53546153   9.814207e+05   9.885856e+05 7.2e-03  7567.78  7324.54  
+ 50434025 4536661 53581647   9.814207e+05   9.885856e+05 7.2e-03  7572.66  7329.24  
+ 50469075 4538945 53618272   9.814207e+05   9.885856e+05 7.2e-03  7577.71  7334.07  
+ 50507176 4541751 53658808   9.814207e+05   9.885856e+05 7.2e-03  7583.18  7339.33  
+ 50541726 4544715 53695013   9.814207e+05   9.885856e+05 7.2e-03  7588.12  7344.09  
+ 50575427 4546748 53731216   9.814207e+05   9.885856e+05 7.2e-03  7592.98  7348.63  
+ 50608436 4548786 53765865   9.814207e+05   9.885856e+05 7.2e-03  7597.73  7353.18  
+ 50645955 4550141 53805866   9.814207e+05   9.885856e+05 7.2e-03  7603.13  7358.31  
+ 50680567 4552153 53842561   9.814207e+05   9.885856e+05 7.2e-03  7608.08  7363.06  
+ 50715314 4554993 53879870   9.814207e+05   9.885856e+05 7.2e-03  7613.11  7367.80  
+ 50751390 4557553 53918378   9.814207e+05   9.885856e+05 7.2e-03  7618.28  7372.76  
+ 50784551 4560476 53954044   9.814207e+05   9.885856e+05 7.2e-03  7623.04  7377.33  
+ 50819770 4562944 53991162   9.814207e+05   9.885856e+05 7.2e-03  7628.08  7382.17  
+ 50854289 4565386 54028840   9.814207e+05   9.885856e+05 7.2e-03  7633.02  7386.86  
+ 50887133 4567578 54063310   9.814207e+05   9.885856e+05 7.2e-03  7637.68  7391.34  
+ 50922580 4570582 54100929   9.814207e+05   9.885856e+05 7.2e-03  7642.73  7396.20  
+ 50957031 4573791 54137497   9.814207e+05   9.885856e+05 7.2e-03  7647.64  7400.90  
+ 50989478 4577402 54172966   9.814207e+05   9.885856e+05 7.2e-03  7652.30  7405.37  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 51022799 4581266 54207831   9.814207e+05   9.885856e+05 7.2e-03  7657.03  7409.91  
+ 51053243 4585204 54240324   9.814207e+05   9.885856e+05 7.2e-03  7661.38  7414.05  
+ 51087018 4589598 54275791   9.814207e+05   9.885856e+05 7.2e-03  7666.15  7418.62  
+ 51120141 4593298 54310507   9.814207e+05   9.885856e+05 7.2e-03  7670.85  7423.11  
+ 51154670 4596848 54346838   9.814207e+05   9.885856e+05 7.2e-03  7675.78  7427.85  
+ 51189441 4600388 54384200   9.814207e+05   9.885856e+05 7.2e-03  7680.75  7432.61  
+ 51229949 4604393 54427161   9.814207e+05   9.885856e+05 7.2e-03  7686.48  7438.12  
+ 51264148 4607640 54463307   9.814207e+05   9.885856e+05 7.2e-03  7691.34  7442.77  
+ 51298105 4610778 54499275   9.814207e+05   9.885856e+05 7.2e-03  7696.19  7447.42  
+ 51335771 4613953 54539119   9.814207e+05   9.885856e+05 7.2e-03  7701.56  7452.56  
+ 51375332 4616696 54581711   9.814207e+05   9.885856e+05 7.2e-03  7707.34  7457.94  
+ 51413609 4620055 54622000   9.814207e+05   9.885856e+05 7.2e-03  7712.79  7463.17  
+ 51448400 4623227 54658955   9.814207e+05   9.885856e+05 7.2e-03  7717.71  7467.89  
+ 51483945 4625643 54697330   9.814207e+05   9.885856e+05 7.2e-03  7722.71  7472.69  
+ 51523910 4628470 54739973   9.814207e+05   9.885856e+05 7.2e-03  7728.40  7478.13  
+ 51560908 4630847 54779403   9.814207e+05   9.885856e+05 7.2e-03  7733.70  7483.19  
+ 51597047 4633923 54817304   9.814207e+05   9.885856e+05 7.2e-03  7738.86  7488.15  
+ 51630735 4636960 54853735   9.814207e+05   9.885856e+05 7.2e-03  7743.68  7492.77  
+ 51666884 4640303 54893143   9.814207e+05   9.885856e+05 7.2e-03  7748.81  7497.71  
+ 51700627 4644099 54928940   9.814207e+05   9.885856e+05 7.2e-03  7753.59  7502.28  
+ 51742012 4647603 54973166   9.814207e+05   9.885856e+05 7.2e-03  7759.45  7507.92  
+ 51779531 4651536 55012452   9.814207e+05   9.885856e+05 7.2e-03  7764.75  7513.00  
+ 51814707 4654267 55049324   9.814207e+05   9.885856e+05 7.2e-03  7769.73  7517.77  
+ 51855015 4656039 55092336   9.814207e+05   9.885856e+05 7.2e-03  7775.41  7523.20  
+ 51896770 4659582 55137106   9.814207e+05   9.885856e+05 7.2e-03  7781.25  7528.83  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 51932761 4662615 55175328   9.814207e+05   9.885856e+05 7.2e-03  7786.29  7533.67  
+ 51970742 4665688 55216019   9.814207e+05   9.885856e+05 7.2e-03  7791.62  7538.79  
+ 52007034 4668413 55254659   9.814207e+05   9.885856e+05 7.2e-03  7796.73  7543.70  
+ 52043469 4671471 55293917   9.814207e+05   9.885856e+05 7.2e-03  7801.90  7548.60  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 52083562 4674756 55336263   9.814207e+05   9.885856e+05 7.2e-03  7807.57  7554.05  
+ 52121322 4677993 55375792   9.814207e+05   9.885856e+05 7.2e-03  7812.95  7559.22  
+ 52155174 4680881 55411591   9.814207e+05   9.885856e+05 7.2e-03  7817.79  7563.86  
+Increase bin node pool size from =1024000 to 2048000 
+
+
+ 52192559 4684146 55450996   9.814207e+05   9.885856e+05 7.2e-03  7823.11  7568.98  
+ 52231711 4687325 55493290   9.814207e+05   9.885856e+05 7.2e-03  7828.73  7574.38  
+ 52272855 4690490 55536550   9.814207e+05   9.885856e+05 7.2e-03  7834.58  7580.02  
+ 52312371 4693020 55577983   9.814207e+05   9.885856e+05 7.2e-03  7840.20  7585.41  
+ 52351441 4696029 55619289   9.814207e+05   9.885856e+05 7.2e-03  7845.80  7590.70  
+ 52389005 4699519 55658784   9.814207e+05   9.885856e+05 7.2e-03  7851.11  7595.79  
+ 52426686 4703004 55699674   9.814207e+05   9.885856e+05 7.2e-03  7856.45  7600.93  
+ 52465917 4706545 55741339   9.814207e+05   9.885856e+05 7.2e-03  7862.00  7606.27  
+ 52507139 4709651 55784781   9.814207e+05   9.885856e+05 7.2e-03  7867.80  7611.86  
+ 52543381 4711491 55823468   9.814207e+05   9.885856e+05 7.2e-03  7872.94  7616.80  
+ 52591706 4716458 55874496   9.814207e+05   9.885856e+05 7.2e-03  7879.82  7623.44  
+ 52633569 4719917 55918624   9.814207e+05   9.885856e+05 7.2e-03  7885.77  7629.16  
+ 52668458 4723474 55956928   9.814207e+05   9.885856e+05 7.2e-03  7890.98  7633.93  
+ 52707958 4726743 55998532   9.814207e+05   9.885856e+05 7.2e-03  7896.65  7639.38  
+ 52745735 4729407 56038154   9.814207e+05   9.885856e+05 7.2e-03  7902.06  7644.59  
+ 52786069 4732341 56080705   9.814207e+05   9.885856e+05 7.2e-03  7907.80  7650.11  
+ 52821457 4735776 56118385   9.814207e+05   9.885856e+05 7.2e-03  7912.86  7654.95  
+ 52861490 4739461 56160291   9.814207e+05   9.885856e+05 7.2e-03  7918.53  7660.41  
+Increase node pool size from =256000 to 512000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 52898608 4742603 56199342   9.814207e+05   9.885856e+05 7.2e-03  7923.76  7665.41  
+ 52935944 4745425 56238577   9.814207e+05   9.885856e+05 7.2e-03  7929.01  7670.44  
+ 52970150 4748742 56274389   9.814207e+05   9.885856e+05 7.2e-03  7933.84  7675.06  
+ 53009182 4751922 56315454   9.814207e+05   9.885856e+05 7.2e-03  7939.37  7680.37  
+ 53045089 4754813 56353975   9.814207e+05   9.885856e+05 7.2e-03  7944.49  7685.29  
+ 53080052 4757137 56390763   9.814207e+05   9.885856e+05 7.2e-03  7949.46  7690.06  
+ 53115031 4759785 56427730   9.814207e+05   9.885856e+05 7.2e-03  7954.39  7694.79  
+ 53152771 4762197 56467733   9.814207e+05   9.885856e+05 7.2e-03  7959.70  7699.90  
+ 53190069 4765409 56506829   9.814207e+05   9.885856e+05 7.2e-03  7964.96  7704.92  
+ 53223120 4767421 56541964   9.814207e+05   9.885856e+05 7.2e-03  7969.65  7709.43  
+ 53262172 4769620 56582963   9.814207e+05   9.885856e+05 7.2e-03  7975.19  7714.77  
+ 53299829 4771916 56622623   9.814207e+05   9.885856e+05 7.2e-03  7980.50  7719.88  
+ 53338912 4773725 56664602   9.814207e+05   9.885856e+05 7.2e-03  7986.04  7725.19  
+ 53376236 4776480 56704070   9.814207e+05   9.885856e+05 7.2e-03  7991.32  7730.26  
+ 53417800 4778988 56747811   9.814207e+05   9.885856e+05 7.2e-03  7997.18  7735.90  
+ 53458569 4782295 56791246   9.814207e+05   9.885856e+05 7.2e-03  8002.96  7741.44  
+ 53495469 4785350 56829875   9.814207e+05   9.885856e+05 7.2e-03  8008.20  7746.47  
+ 53533355 4787646 56869709   9.814207e+05   9.885856e+05 7.2e-03  8013.59  7751.65  
+ 53573538 4790649 56912214   9.814207e+05   9.885856e+05 7.2e-03  8019.34  7757.17  
+Increase node pool size from =256000 to 512000 
+
+
+Increase node pool size from =256000 to 512000 
+
+
+ 53620686 4794666 56964478   9.814207e+05   9.885856e+05 7.2e-03  8026.11  7763.68  
+ 53661300 4798282 57007453   9.814207e+05   9.885856e+05 7.2e-03  8031.94  7769.29  
+ 53697167 4802103 57046215   9.814207e+05   9.885856e+05 7.2e-03  8037.06  7774.20  
+Increase node pool size from =256000 to 512000 
+
+
+ 53734754 4805761 57085606   9.814207e+05   9.885856e+05 7.2e-03  8042.36  7779.30  
+ 53778686 4809617 57132356   9.814207e+05   9.885856e+05 7.2e-03  8048.50  7785.19  
+ 53814536 4812905 57170932   9.814207e+05   9.885856e+05 7.2e-03  8053.46  7789.93  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 53850556 4816522 57209733   9.814207e+05   9.885856e+05 7.2e-03  8058.48  7794.74  
+ 53885025 4820582 57245788   9.814207e+05   9.885856e+05 7.2e-03  8063.29  7799.23  
+ 53922831 4825255 57286007   9.814207e+05   9.885856e+05 7.2e-03  8068.57  7804.30  
+ 53964337 4829824 57330113   9.814207e+05   9.885856e+05 7.2e-03  8074.38  7809.88  
+ 54005469 4834142 57375022   9.814207e+05   9.885856e+05 7.2e-03  8080.32  7815.40  
+ 54059252 4838361 57431821   9.814207e+05   9.885856e+05 7.2e-03  8087.78  7822.53  
+ 54104854 4841617 57479724   9.814207e+05   9.885856e+05 7.2e-03  8094.08  7828.59  
+ 54148912 4845166 57525891   9.814207e+05   9.885856e+05 7.2e-03  8100.20  7834.47  
+ 54197536 4848992 57577910   9.814207e+05   9.885856e+05 7.2e-03  8106.97  7840.96  
+ 54238979 4853704 57621817   9.814207e+05   9.885856e+05 7.2e-03  8112.83  7846.59  
+ 54280143 4858500 57665540   9.814207e+05   9.885856e+05 7.2e-03  8118.65  7852.17  
+ 54319839 4862344 57707569   9.814207e+05   9.885856e+05 7.2e-03  8124.50  7857.56  
+ 54362648 4866851 57752308   9.814207e+05   9.885856e+05 7.2e-03  8130.59  7863.42  
+ 54403007 4870318 57794855   9.814207e+05   9.885856e+05 7.2e-03  8136.33  7868.90  
+ 54442746 4874093 57836866   9.814207e+05   9.885856e+05 7.2e-03  8141.93  7874.28  
+ 54483115 4878390 57879683   9.814207e+05   9.885856e+05 7.2e-03  8147.60  7879.72  
+ 54518262 4882316 57917318   9.814207e+05   9.885856e+05 7.2e-03  8152.60  7884.51  
+ 54555987 4886412 57957347   9.814207e+05   9.885856e+05 7.2e-03  8157.94  7889.65  
+ 54592950 4889913 57996580   9.814207e+05   9.885856e+05 7.2e-03  8163.20  7894.64  
+ 54627327 4893086 58032587   9.814207e+05   9.885856e+05 7.2e-03  8168.02  7899.24  
+ 54663591 4896091 58070631   9.814207e+05   9.885856e+05 7.2e-03  8173.09  7904.12  
+ 54700050 4899265 58109468   9.814207e+05   9.885856e+05 7.2e-03  8178.26  7909.06  
+ 54734472 4901662 58146086   9.814207e+05   9.885856e+05 7.2e-03  8183.18  7913.76  
+ 54776747 4905019 58190507   9.814207e+05   9.885856e+05 7.2e-03  8189.21  7919.55  
+ 54822343 4907853 58238584   9.814207e+05   9.885856e+05 7.2e-03  8195.74  7925.82  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 54865627 4911305 58285380   9.814207e+05   9.885856e+05 7.2e-03  8201.98  7931.85  
+ 54902578 4914852 58324389   9.814207e+05   9.885856e+05 7.2e-03  8207.33  7936.99  
+ 54939318 4918190 58364126   9.814207e+05   9.885856e+05 7.2e-03  8212.63  7942.04  
+ 54975849 4921054 58403039   9.814207e+05   9.885856e+05 7.2e-03  8217.86  7947.05  
+ 55015320 4924153 58445617   9.814207e+05   9.885856e+05 7.2e-03  8223.50  7952.49  
+ 55057007 4927007 58490044   9.814207e+05   9.885856e+05 7.2e-03  8229.44  7958.17  
+ 55096841 4930442 58532124   9.814207e+05   9.885856e+05 7.2e-03  8235.12  7963.61  
+ 55132097 4932938 58569719   9.814207e+05   9.885856e+05 7.2e-03  8240.15  7968.44  
+ 55168193 4935631 58607684   9.814207e+05   9.885856e+05 7.2e-03  8245.29  7973.38  
+ 55204263 4938564 58646198   9.814207e+05   9.885856e+05 7.2e-03  8250.45  7978.33  
+ 55241986 4942010 58685740   9.814207e+05   9.885856e+05 7.2e-03  8255.85  7983.51  
+Increase node pool size from =256000 to 512000 
+
+
+ 55278092 4944706 58724236   9.814207e+05   9.885856e+05 7.2e-03  8261.03  7988.46  
+Increase node pool size from =256000 to 512000 
+
+
+ 55310726 4948144 58759414   9.814207e+05   9.885856e+05 7.2e-03  8265.89  7992.93  
+Increase node pool size from =256000 to 512000 
+
+
+ 55347703 4951906 58798508   9.814207e+05   9.885856e+05 7.2e-03  8271.14  7997.98  
+ 55382273 4954367 58834737   9.814207e+05   9.885856e+05 7.2e-03  8276.07  8002.70  
+ 55418866 4957498 58874270   9.814207e+05   9.885856e+05 7.2e-03  8281.30  8007.72  
+ 55459496 4960948 58917597   9.814207e+05   9.885856e+05 7.2e-03  8287.08  8013.28  
+ 55496925 4963606 58957347   9.814207e+05   9.885856e+05 7.2e-03  8292.43  8018.42  
+Increase node pool size from =256000 to 512000 
+
+
+ 55532146 4966673 58994547   9.814207e+05   9.885856e+05 7.2e-03  8297.47  8023.26  
+ 55568437 4969833 59033675   9.814207e+05   9.885856e+05 7.2e-03  8302.73  8028.30  
+ 55603691 4972298 59070616   9.814207e+05   9.885856e+05 7.2e-03  8307.79  8033.16  
+ 55639451 4975722 59108336   9.814207e+05   9.885856e+05 7.2e-03  8312.90  8038.07  
+ 55674355 4978867 59146834   9.814207e+05   9.885856e+05 7.2e-03  8317.88  8042.85  
+ 55713723 4982729 59188131   9.814207e+05   9.885856e+05 7.2e-03  8323.52  8048.25  
+ 55760924 4988641 59237697   9.814207e+05   9.885856e+05 7.2e-03  8330.17  8054.65  
+Increase node pool size from =256000 to 512000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 55813440 4993823 59293339   9.814207e+05   9.885856e+05 7.2e-03  8337.66  8061.76  
+ 55861689 4997937 59343963   9.814207e+05   9.885856e+05 7.2e-03  8344.53  8068.35  
+ 55900800 5000240 59385290   9.814207e+05   9.885856e+05 7.2e-03  8350.08  8073.70  
+ 55942389 5003246 59428763   9.814207e+05   9.885856e+05 7.2e-03  8355.94  8079.33  
+ 55987070 5007317 59476003   9.814207e+05   9.885856e+05 7.2e-03  8362.23  8085.39  
+ 56023267 5010191 59513919   9.814207e+05   9.885856e+05 7.2e-03  8367.33  8090.27  
+ 56061017 5013105 59553876   9.814207e+05   9.885856e+05 7.2e-03  8372.63  8095.33  
+ 56099068 5016555 59593948   9.814207e+05   9.885856e+05 7.2e-03  8378.01  8100.49  
+ 56133728 5020026 59631022   9.814207e+05   9.885856e+05 7.2e-03  8382.91  8105.17  
+ 56169849 5023303 59668700   9.814207e+05   9.885856e+05 7.2e-03  8388.01  8110.05  
+ 56209709 5027553 59711125   9.814207e+05   9.885856e+05 7.2e-03  8393.71  8115.49  
+ 56245269 5031094 59748284   9.814207e+05   9.885856e+05 7.2e-03  8398.75  8120.29  
+ 56281570 5033654 59786456   9.814207e+05   9.885856e+05 7.2e-03  8403.89  8125.22  
+Increase node pool size from =256000 to 512000 
+
+
+ 56328479 5037450 59836361   9.814207e+05   9.885856e+05 7.2e-03  8410.51  8131.61  
+ 56366614 5041500 59878341   9.814207e+05   9.885856e+05 7.2e-03  8415.96  8136.84  
+Increase node pool size from =256000 to 512000 
+
+
+ 56403102 5044968 59916616   9.814207e+05   9.885856e+05 7.2e-03  8421.10  8141.76  
+ 56437684 5048480 59953027   9.814207e+05   9.885856e+05 7.2e-03  8425.94  8146.40  
+ 56475026 5052515 59992175   9.814207e+05   9.885856e+05 7.2e-03  8431.11  8151.36  
+ 56511351 5057020 60030205   9.814207e+05   9.885856e+05 7.2e-03  8436.19  8156.22  
+ 56548643 5061412 60069413   9.814207e+05   9.885856e+05 7.2e-03  8441.46  8161.27  
+ 56585317 5064971 60110039   9.814207e+05   9.885856e+05 7.2e-03  8446.62  8166.22  
+ 56622285 5068740 60149149   9.814207e+05   9.885856e+05 7.2e-03  8451.92  8171.18  
+ 56658613 5073024 60187270   9.814207e+05   9.885856e+05 7.2e-03  8457.01  8176.05  
+ 56691297 5076564 60221396   9.814207e+05   9.885856e+05 7.2e-03  8461.60  8180.44  
+Increase node pool size from =256000 to 512000 
+
+
+Increase node pool size from =256000 to 512000 
+
+
+ 56730266 5080664 60262245   9.814207e+05   9.885856e+05 7.2e-03  8467.15  8185.75  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 56765938 5083918 60299956   9.814207e+05   9.885856e+05 7.2e-03  8472.21  8190.59  
+ 56802569 5087369 60339059   9.814207e+05   9.885856e+05 7.2e-03  8477.46  8195.60  
+ 56835622 5090365 60375236   9.814207e+05   9.885856e+05 7.2e-03  8482.26  8200.10  
+ 56873382 5093759 60416164   9.814207e+05   9.885856e+05 7.2e-03  8487.64  8205.27  
+ 56907013 5095881 60452099   9.814207e+05   9.885856e+05 7.2e-03  8492.42  8209.83  
+ 56941495 5097856 60488475   9.814207e+05   9.885856e+05 7.2e-03  8497.31  8214.49  
+ 56979905 5101084 60529197   9.814207e+05   9.885856e+05 7.2e-03  8502.79  8219.75  
+Increase node pool size from =256000 to 512000 
+
+
+ 57022027 5104694 60575343   9.814207e+05   9.885856e+05 7.2e-03  8509.09  8225.52  
+ 57054457 5107838 60610622   9.814207e+05   9.885856e+05 7.2e-03  8513.76  8229.97  
+ 57087511 5110901 60645346   9.814207e+05   9.885856e+05 7.2e-03  8518.50  8234.49  
+ 57129561 5112758 60689623   9.814207e+05   9.885856e+05 7.2e-03  8524.41  8240.17  
+ 57165505 5115090 60727962   9.814207e+05   9.885856e+05 7.2e-03  8529.44  8244.98  
+ 57201065 5117404 60765935   9.814207e+05   9.885856e+05 7.2e-03  8534.39  8249.71  
+Increase node pool size from =256000 to 512000 
+
+
+ 57239134 5120777 60806387   9.814207e+05   9.885856e+05 7.2e-03  8539.83  8254.75  
+ 57277219 5123616 60846869   9.814207e+05   9.885856e+05 7.2e-03  8545.26  8259.98  
+ 57315927 5127180 60887698   9.814207e+05   9.885856e+05 7.2e-03  8550.74  8265.23  
+ 57350114 5129979 60923996   9.814207e+05   9.885856e+05 7.2e-03  8555.61  8269.88  
+ 57384702 5132963 60960303   9.814207e+05   9.885856e+05 7.2e-03  8560.53  8274.57  
+ 57418264 5136152 60995383   9.814207e+05   9.885856e+05 7.2e-03  8565.33  8279.16  
+ 57456398 5139690 61035305   9.814207e+05   9.885856e+05 7.2e-03  8570.69  8284.29  
+ 57494567 5143158 61076479   9.814207e+05   9.885856e+05 7.2e-03  8576.02  8289.39  
+ 57529419 5146895 61113068   9.814207e+05   9.885856e+05 7.2e-03  8580.87  8294.01  
+ 57566959 5150097 61153053   9.814207e+05   9.885856e+05 7.2e-03  8586.17  8299.04  
+ 57600689 5153160 61188587   9.814207e+05   9.885856e+05 7.2e-03  8590.93  8303.59  
+Increase node pool size from =256000 to 512000 
+
+
+ 57639967 5157498 61230090   9.814207e+05   9.885856e+05 7.2e-03  8596.41  8308.84  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 57677678 5160794 61269802   9.814207e+05   9.885856e+05 7.2e-03  8601.67  8313.88  
+Increase node pool size from =256000 to 512000 
+
+
+Increase node pool size from =256000 to 512000 
+
+
+ 57717236 5165721 61311475   9.814207e+05   9.885856e+05 7.2e-03  8607.19  8319.15  
+ 57751942 5169683 61349250   9.814207e+05   9.885856e+05 7.2e-03  8612.09  8323.84  
+Increase node pool size from =256000 to 512000 
+
+
+ 57793747 5174326 61392978   9.814207e+05   9.885856e+05 7.2e-03  8617.95  8329.45  
+ 57833499 5177959 61434623   9.814207e+05   9.885856e+05 7.2e-03  8623.51  8334.77  
+Increase node pool size from =256000 to 512000 
+
+
+ 57874293 5182023 61478486   9.814207e+05   9.885856e+05 7.2e-03  8629.19  8340.21  
+ 57914370 5186057 61521747   9.814207e+05   9.885856e+05 7.2e-03  8634.82  8345.48  
+ 57951166 5189926 61560663   9.814207e+05   9.885856e+05 7.2e-03  8639.85  8350.28  
+Increase node pool size from =256000 to 512000 
+
+
+Increase node pool size from =256000 to 512000 
+
+
+ 57987000 5194209 61599564   9.814207e+05   9.885856e+05 7.2e-03  8644.69  8354.90  
+Increase node pool size from =256000 to 512000 
+
+
+ 58019392 5198458 61634379   9.814207e+05   9.885856e+05 7.2e-03  8649.14  8359.16  
+ 58058079 5203047 61675496   9.814207e+05   9.885856e+05 7.2e-03  8654.51  8364.30  
+ 58096618 5207682 61715821   9.814207e+05   9.885856e+05 7.2e-03  8659.86  8369.41  
+ 58131627 5211653 61753943   9.814207e+05   9.885856e+05 7.2e-03  8664.98  8374.00  
+Increase node pool size from =256000 to 512000 
+
+
+Increase node pool size from =256000 to 512000 
+
+
+ 58166878 5215792 61791430   9.814207e+05   9.885856e+05 7.2e-03  8669.85  8378.65  
+ 58199099 5219493 61826087   9.814207e+05   9.885856e+05 7.2e-03  8674.32  8382.92  
+ 58233914 5222729 61863097   9.814207e+05   9.885856e+05 7.2e-03  8679.18  8387.56  
+ 58268160 5224526 61899191   9.814207e+05   9.885856e+05 7.2e-03  8683.96  8392.13  
+ 58302372 5226584 61935372   9.814207e+05   9.885856e+05 7.2e-03  8688.72  8396.68  
+ 58337135 5228914 61972027   9.814207e+05   9.885856e+05 7.2e-03  8693.55  8401.29  
+Increase node pool size from =256000 to 512000 
+
+
+ 58373045 5232291 62010295   9.814207e+05   9.885856e+05 7.2e-03  8698.60  8406.13  
+ 58415374 5236114 62054807   9.814207e+05   9.885856e+05 7.2e-03  8704.48  8411.78  
+ 58452324 5239491 62094609   9.814207e+05   9.885856e+05 7.2e-03  8709.65  8416.73  
+ 58493441 5243096 62138506   9.814207e+05   9.885856e+05 7.2e-03  8715.41  8422.24  
+ 58527652 5245601 62174629   9.814207e+05   9.885856e+05 7.2e-03  8720.29  8426.91  
+ 58564462 5248626 62213619   9.814207e+05   9.885856e+05 7.2e-03  8725.56  8431.96  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 58596614 5251414 62247254   9.814207e+05   9.885856e+05 7.2e-03  8730.14  8436.33  
+ 58630665 5254186 62283171   9.814207e+05   9.885856e+05 7.2e-03  8734.91  8440.88  
+ 58663542 5257313 62317945   9.814207e+05   9.885856e+05 7.2e-03  8739.53  8445.30  
+ 58702142 5261312 62358591   9.814207e+05   9.885856e+05 7.2e-03  8744.95  8450.50  
+ 58739105 5264937 62398147   9.814207e+05   9.885856e+05 7.2e-03  8750.10  8455.37  
+ 58780894 5269826 62442005   9.814207e+05   9.885856e+05 7.2e-03  8755.78  8460.80  
+ 58814927 5273225 62477597   9.814207e+05   9.885856e+05 7.2e-03  8760.47  8465.28  
+ 58850714 5275606 62515794   9.814207e+05   9.885856e+05 7.2e-03  8765.44  8470.03  
+ 58887740 5278507 62555010   9.814207e+05   9.885856e+05 7.2e-03  8770.59  8474.97  
+ 58922117 5281573 62591591   9.814207e+05   9.885856e+05 7.2e-03  8775.41  8479.59  
+Increase node pool size from =256000 to 512000 
+
+
+ 58957086 5283410 62628536   9.814207e+05   9.885856e+05 7.2e-03  8780.34  8484.32  
+ 58990904 5285310 62664322   9.814207e+05   9.885856e+05 7.2e-03  8785.09  8488.86  
+Increase node pool size from =256000 to 512000 
+
+
+ 59028650 5288176 62703753   9.814207e+05   9.885856e+05 7.2e-03  8790.41  8493.96  
+ 59066928 5291755 62744220   9.814207e+05   9.885856e+05 7.2e-03  8795.84  8499.15  
+ 59105116 5295573 62784185   9.814207e+05   9.885856e+05 7.2e-03  8801.22  8504.31  
+ 59143450 5298985 62825059   9.814207e+05   9.885856e+05 7.2e-03  8806.61  8509.46  
+ 59179498 5301960 62864157   9.814207e+05   9.885856e+05 7.2e-03  8811.81  8514.30  
+ 59218909 5305797 62905345   9.814207e+05   9.885856e+05 7.2e-03  8817.37  8519.62  
+ 59261944 5309637 62950525   9.814207e+05   9.885856e+05 7.2e-03  8823.37  8525.38  
+ 59304298 5313508 62994983   9.814207e+05   9.885856e+05 7.2e-03  8829.29  8531.05  
+Increase node pool size from =256000 to 512000 
+
+
+ 59342448 5317180 63035084   9.814207e+05   9.885856e+05 7.2e-03  8834.65  8536.14  
+ 59384377 5320934 63079513   9.814207e+05   9.885856e+05 7.2e-03  8840.48  8541.70  
+ 59422779 5324788 63120157   9.814207e+05   9.885856e+05 7.2e-03  8845.77  8546.73  
+ 59460175 5328094 63159380   9.814207e+05   9.885856e+05 7.2e-03  8850.98  8551.70  
+ 59497316 5331428 63198629   9.814207e+05   9.885856e+05 7.2e-03  8856.12  8556.60  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 59532011 5334952 63235961   9.814207e+05   9.885856e+05 7.2e-03  8860.99  8561.23  
+ 59572767 5339015 63278790   9.814207e+05   9.885856e+05 7.2e-03  8866.67  8566.69  
+ 59605450 5342628 63313464   9.814207e+05   9.885856e+05 7.2e-03  8871.30  8571.10  
+ 59646424 5346898 63356818   9.814207e+05   9.885856e+05 7.2e-03  8877.07  8576.63  
+ 59681410 5350504 63393388   9.814207e+05   9.885856e+05 7.2e-03  8882.04  8581.36  
+ 59716301 5353605 63429944   9.814207e+05   9.885856e+05 7.2e-03  8886.89  8585.98  
+ 59753674 5357584 63469473   9.814207e+05   9.885856e+05 7.2e-03  8892.11  8590.97  
+ 59789569 5361947 63506968   9.814207e+05   9.885856e+05 7.2e-03  8897.08  8595.70  
+ 59822470 5366044 63542209   9.814207e+05   9.885856e+05 7.2e-03  8901.66  8600.03  
+ 59855608 5368975 63576897   9.814207e+05   9.885856e+05 7.2e-03  8906.28  8604.41  
+ 59891406 5372128 63616729   9.814207e+05   9.885856e+05 7.2e-03  8911.31  8609.20  
+ 59932528 5375299 63660452   9.814207e+05   9.885856e+05 7.2e-03  8917.09  8614.73  
+ 59974143 5378745 63705779   9.814207e+05   9.885856e+05 7.2e-03  8922.86  8620.26  
+ 60011168 5382437 63744919   9.814207e+05   9.885856e+05 7.2e-03  8928.03  8625.18  
+ 60047598 5386273 63783158   9.814207e+05   9.885856e+05 7.2e-03  8933.18  8630.11  
+ 60092360 5391117 63831673   9.814207e+05   9.885856e+05 7.2e-03  8939.52  8636.19  
+ 60130677 5395786 63872366   9.814207e+05   9.885856e+05 7.2e-03  8944.90  8641.35  
+ 60173139 5400720 63917128   9.814207e+05   9.885856e+05 7.2e-03  8950.84  8647.04  
+ 60210840 5404909 63957173   9.814207e+05   9.885856e+05 7.2e-03  8956.14  8652.12  
+Increase node pool size from =256000 to 512000 
+
+
+ 60249720 5409022 63998457   9.814207e+05   9.885856e+05 7.2e-03  8961.59  8657.32  
+ 60286891 5412312 64038695   9.814207e+05   9.885856e+05 7.2e-03  8966.79  8662.28  
+ 60323705 5415807 64078593   9.814207e+05   9.885856e+05 7.2e-03  8971.92  8667.17  
+ 60360677 5419206 64117585   9.814207e+05   9.885856e+05 7.2e-03  8977.07  8672.09  
+ 60394306 5421448 64153458   9.814207e+05   9.885856e+05 7.2e-03  8981.77  8676.59  
+ 60428152 5424151 64189707   9.814207e+05   9.885856e+05 7.2e-03  8986.54  8681.14  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+ 60462882 5427096 64226355   9.814207e+05   9.885856e+05 7.2e-03  8991.48  8685.84  
+ 60502283 5431263 64268352   9.814207e+05   9.885856e+05 7.2e-03  8997.01  8691.12  
+ 60523479 5433087 64290612   9.814207e+05   9.885856e+05 7.2e-03  9000.00  8693.94  
+
+Parallel MIP workload: 35651159.79 secs
+    0   1   2   3   4   5   6   7   8   9 
+0:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+1:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+2:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+3:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+4:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+5:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+6:|2%|2%|2%|2%|
+
+Feasible solution found
+
+Status                       :                      5
+Objective Value              :              988585.62
+Best Bound                   :          981420.662659
+Rel. MIP Gap                 :           7.247685e-03
+Abs. MIP Gap                 :           7.164957e+03
+
+Primal Infeasibility         :           2.328306e-10
+Integer Infeasibility        :           0.000000e+00
+
+Total Branches               :               60523479
+Total LPs Solved             :               64290612
+Simplex Iterations           :              383001000
+Barrier Iterations           :                      0
+Nonlinear Iterations         :                      0
+Cutting planes applied       :                   1384 (1384)
+    + Flow Covers            :                    932
+    + Disaggregation         :                    104
+    + Gomory                 :                    215
+    + Coeff. Reduction       :                     54
+    + Clique                 :                     79
+Total Time (sec.)            :                9000.06
+ 
+
+
+Error 2017: Time limit is reached before solving to completion.
+
+Elapsed time : 9000.00 seconds
+
+
+
+Error 2017: Time limit is reached before solving to completion. 
+

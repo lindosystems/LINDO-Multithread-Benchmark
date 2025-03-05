@@ -1,0 +1,10 @@
+#PBS -N bppc4-08_16_32_64
+#PBS -j oe
+#PBS -l select=1:ncpus=2:mpiprocs=2:mem=128gb
+#PBS -l walltime=08:10:00
+echo -Run 16
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/bppc4-08.mps -nthreads 16 -tlim 9000 >> /home/jhaas/TEST_LINDO/bppc4-08/bppc4-08_16.log
+echo -Run 32
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/bppc4-08.mps -nthreads 32 -tlim 9000 >> /home/jhaas/TEST_LINDO/bppc4-08/bppc4-08_32.log
+echo -Run 64
+./LINDO/lindoapi/bin/linux64/runlindo /home/jhaas/TEST_LINDO/bppc4-08.mps -nthreads 64 -tlim 9000 >> /home/jhaas/TEST_LINDO/bppc4-08/bppc4-08_64.log

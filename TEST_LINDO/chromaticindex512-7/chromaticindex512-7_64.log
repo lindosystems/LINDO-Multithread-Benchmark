@@ -1,0 +1,112 @@
+
+LINDO API Version 15.0.6099.199 built on Oct 29 2024 22:01:27
+Barrier Solver Version 0.0.000, Nonlinear Solver Version 3.17N
+Platform Linux 64x86 (D)
+
+Copyright (c) 2024 by LINDO Systems, Inc. Licensed material,
+all rights reserved. Copying except as authorized in license 
+agreement is prohibited.
+
+Number of users allowed=1   
+No expiration date
+Jhaas@lindo.com 
+
+Reading model parameters from /home/jhaas/TEST_LINDO/chromaticindex512-7.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading model parameters from lindo.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading /home/jhaas/TEST_LINDO/chromaticindex512-7.mps in MPS format (unformatted)
+Processed 215039 lines in MPS format (0.13 secs).
+
+Number of constraints:   33791    le:   24576, ge:       0, eq:    9215, rn:       0 (ne:0)
+Number of variables  :   36864    lb:       0, ub:       0, fr:       0, bx:   36864 (fx:0)
+Number of nonzeroes  :  135156    density: 1.1e-06(%)     , sb:       0, dir:min
+
+Abs. Ranges     :         Min.          Max.    Condition.
+Matrix Coef. (A):      1.00000       1.00000       1.00000 
+Obj. Vector  (c):      1.00000       1.00000       1.00000 
+RHS Vector   (b):      1.00000       1.00000       1.00000 
+Lower Bounds (l):  1.0000e-100   1.0000e-100       1.00000 
+Upper Bounds (u):      1.00000       1.00000       1.00000 
+BadScale Measure: 0
+
+Binary variables     :   36864 (in 33791 constraints)
+Integer variables    :       0 (in 0 constraints)
+
+Minimizing the MILP objective...
+
+cmdline Option MODEL maximum number of threads to run the solver called : 64
+Ori. size (m, n, nz,  nip):  33791,  36864,   135156,   36864
+
+Time Consumed in probing: 55.60 (sec.)
+
+
+Initial continuous objective: 3.000000
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+        0      0        2   3.000000e+00   4.000000e+00 2.5e-01  76.92  (*FP) 
+C(   1) (     5)        5   3.000000e+00   4.000000e+00 2.5e-01  83.78  21.63  
+C(   2) (     6)        6   3.000000e+00   4.000000e+00 2.5e-01  86.39  21.81  
+C(   3) (     7)        7   3.000000e+00   4.000000e+00 2.5e-01  88.33  21.99  
+C(   4) (     9)        8   3.000000e+00   4.000000e+00 2.5e-01  90.98  22.17  
+C(   5) (    10)        9   3.000000e+00   4.000000e+00 2.5e-01  93.61  22.41  
+C(   6) (    20)       11   3.000000e+00   4.000000e+00 2.5e-01  96.45  22.73  
+C(   7) (    21)       12   3.000000e+00   4.000000e+00 2.5e-01  99.20  22.92  
+C(   8) (    22)       13   3.000000e+00   4.000000e+00 2.5e-01  101.94  23.10  
+C(   9) (    23)       14   3.000000e+00   4.000000e+00 2.5e-01  103.86  23.30  
+C(  10) (    26)       44   3.000000e+00   4.000000e+00 2.5e-01  338.39  79.02  
+C(  11) (    27)       45   3.000000e+00   4.000000e+00 2.5e-01  340.36  79.21  
+C(  12) (    28)       46   3.000000e+00   4.000000e+00 2.5e-01  343.20  79.44  
+C(  13) (    29)       48   3.000000e+00   4.000000e+00 2.5e-01  346.13  79.73  
+
+        2      1       48   3.000000e+00   4.000000e+00 2.5e-01  348.72  (*H)  
+        2      1       48   3.000000e+00   4.000000e+00 2.5e-01  348.72  (*H)  
+     1311   1254    11037   3.000000e+00   4.000000e+00 2.5e-01  3476.05  3168.65  
+     2514   2326    20693   3.000000e+00   4.000000e+00 2.5e-01  4284.49  3966.66  
+     4146   3787    31520   3.000000e+00   4.000000e+00 2.5e-01  8313.93  7982.15  
+     5010   4576    36467   3.000000e+00   4.000000e+00 2.5e-01  9000.41  8664.63  
+
+Parallel MIP workload: 21292705.92 secs
+    0   1   2   3   4   5   6   7   8   9 
+0:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+1:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+2:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+3:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+4:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+5:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+6:|2%|2%|2%|2%|
+
+Feasible solution found
+
+Status                       :                      5
+Objective Value              :                      4
+Best Bound                   :                      3
+Rel. MIP Gap                 :           2.500000e-01
+Abs. MIP Gap                 :           1.000000e+00
+
+Primal Infeasibility         :           0.000000e+00
+Integer Infeasibility        :           0.000000e+00
+
+Total Branches               :                   5010
+Total LPs Solved             :                  36467
+Simplex Iterations           :                2505392
+Barrier Iterations           :                     36
+Nonlinear Iterations         :                      0
+Cutting planes applied       :                     30 (30)
+    + Gomory                 :                     28
+    + Contra                 :                      2
+Total Time (sec.)            :                9000.43
+ 
+
+
+Error 2017: Time limit is reached before solving to completion.
+
+Elapsed time : 9001.00 seconds
+
+
+
+Error 2017: Time limit is reached before solving to completion. 
+

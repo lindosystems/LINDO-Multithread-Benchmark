@@ -1,0 +1,8 @@
+Test_File,Threads,Status,Objective_Value,Best_Bound,Total_Branches,Total_Time
+var-smallemery-m6j6,1,1,-146.6875,-146.6875,17681,2038.43
+var-smallemery-m6j6,2,1,-146.21875,-146.21875,38858,3526.04
+var-smallemery-m6j6,4,1,-146.21875,-146.21875,39561,1524.58
+var-smallemery-m6j6,8,1,-146.21875,-146.21875,39111,978.53
+var-smallemery-m6j6,16,5,-149.375,-150.192032605,1049747,9000.41
+var-smallemery-m6j6,32,1,-146.34375,-146.34375,58787,643.75
+var-smallemery-m6j6,64,1,-146.34375,-146.34375,83758,974.94

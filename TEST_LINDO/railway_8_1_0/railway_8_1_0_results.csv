@@ -1,0 +1,8 @@
+Test_File,Threads,Status,Objective_Value,Best_Bound,Total_Branches,Total_Time
+railway_8_1_0,1,5,401,399,1728031,9000
+railway_8_1_0,2,5,401,399,3758851,9000.01
+railway_8_1_0,4,5,401,398,7353657,9000.01
+railway_8_1_0,8,1,400,400,677396,597.89
+railway_8_1_0,16,5,400,399,13136021,9000
+railway_8_1_0,32,5,400,399,10834142,9000.02
+railway_8_1_0,64,1,402,402,295923,479.03

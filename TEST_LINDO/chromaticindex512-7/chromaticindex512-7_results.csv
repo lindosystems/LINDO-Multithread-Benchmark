@@ -1,0 +1,8 @@
+Test_File,Threads,Status,Objective_Value,Best_Bound,Total_Branches,Total_Time
+chromaticindex512-7,1,5,4,3,34256,9000.01
+chromaticindex512-7,2,5,4,3,36622,9000.03
+chromaticindex512-7,4,5,4,3,125047,9000.03
+chromaticindex512-7,8,5,4,3,89762,9000.08
+chromaticindex512-7,16,5,4,3,58551,9000.15
+chromaticindex512-7,32,5,4,3,40344,9000.28
+chromaticindex512-7,64,5,4,3,5010,9000.43

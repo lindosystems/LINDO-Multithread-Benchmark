@@ -1,0 +1,519 @@
+
+LINDO API Version 15.0.6099.199 built on Oct 29 2024 22:01:27
+Barrier Solver Version 0.0.000, Nonlinear Solver Version 3.17N
+Platform Linux 64x86 (D)
+
+Copyright (c) 2024 by LINDO Systems, Inc. Licensed material,
+all rights reserved. Copying except as authorized in license 
+agreement is prohibited.
+
+Number of users allowed=1   
+No expiration date
+Jhaas@lindo.com 
+
+Reading model parameters from /home/jhaas/TEST_LINDO/s250r10.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading model parameters from lindo.par
+Warning: Could not open file for problem I/O. (error:2002)
+Reading /home/jhaas/TEST_LINDO/s250r10.mps in MPS format (unformatted)
+Processed 1856490 lines in MPS format (2.18 secs).
+
+Number of constraints:   10962    le:     266, ge:     253, eq:   10443, rn:       0 (ne:0)
+Number of variables  :  273142    lb:       0, ub:       0, fr:       0, bx:  273142 (fx:0)
+Number of nonzeroes  : 1318607    density: 4.4e-06(%)     , sb:       0, dir:min
+
+Abs. Ranges     :         Min.          Max.    Condition.
+Matrix Coef. (A):      1.00000   43200.00000   43200.00000 
+Obj. Vector  (c):      0.00005       0.00200      40.00000 
+RHS Vector   (b):      1.00000   90667.00000   90667.00000 
+Lower Bounds (l):  1.0000e-100   1.0000e-100       1.00000 
+Upper Bounds (u):      1.00000   20000.00000   20000.00000 
+BadScale Measure: 0
+
+Binary variables     :  273139 (in 10880 constraints)
+Integer variables    :       0 (in 0 constraints)
+
+Minimizing the MILP objective...
+
+cmdline Option MODEL maximum number of threads to run the solver called : 64
+Ori. size (m, n, nz,  nip):  10962, 273142,  1318607,  273139
+New  size (m, n, nz,  nip):   6227, 267812,  1079974,  267809
+
+Time Consumed in probing: 30.49 (sec.)
+
+
+Initial continuous objective: -0.172677
+
+Checked model structure: 0.020000 seconds
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+        0      0        2  -1.726770e-01  -6.902927e-02 1.0e-01  44.29  (*FP) 
+        0      0        4  -1.726770e-01  -8.852927e-02 8.4e-02  44.48  (*SRH) 
+        0      0       17  -1.726770e-01  -1.511127e-01 2.2e-02  71.66  (*SRH-) 
+        0      0       29  -1.726770e-01  -1.629500e-01 9.7e-03  78.35  (*C-) 
+        0      0       29  -1.726770e-01  -1.629500e-01 9.7e-03  78.35  (*C-) 
+C(   1) (     5)       90  -1.726770e-01  -1.629500e-01 9.7e-03  115.08  17.25  
+C(   2) (     6)       91  -1.726770e-01  -1.629500e-01 9.7e-03  118.07  17.35  
+C(   3) (    12)       92  -1.726770e-01  -1.629500e-01 9.7e-03  121.20  17.49  
+C(   4) (    18)       94  -1.726770e-01  -1.629500e-01 9.7e-03  124.00  17.66  
+C(   5) (    20)       95  -1.726770e-01  -1.629500e-01 9.7e-03  126.52  17.75  
+C(   6) (    23)       96  -1.726770e-01  -1.629500e-01 9.7e-03  128.94  17.86  
+        7      0       99  -1.726770e-01  -1.629633e-01 9.7e-03  143.23  (*AH-) 
+        7      0      100  -1.726770e-01  -1.639633e-01 8.7e-03  143.24  (*SRH-) 
+C(   7) (    25)      137  -1.726770e-01  -1.639633e-01 8.7e-03  174.41  18.95  
+C(   8) (    26)      140  -1.726346e-01  -1.639633e-01 8.7e-03  178.79  20.58  
+C(   9) (    31)      142  -1.726346e-01  -1.639633e-01 8.7e-03  181.58  20.88  
+C(  10) (    37)      144  -1.726346e-01  -1.639633e-01 8.7e-03  184.27  21.36  
+C(  11) (    38)      146  -1.726346e-01  -1.639633e-01 8.7e-03  185.05  21.64  
+C(  12) (    41)      147  -1.726337e-01  -1.639633e-01 8.7e-03  187.85  22.03  
+C(  13) (    42)      149  -1.726337e-01  -1.639633e-01 8.7e-03  188.58  22.23  
+C(  14) (    47)      150  -1.726337e-01  -1.639633e-01 8.7e-03  190.91  22.38  
+
+        9      1      155  -1.726337e-01  -1.639633e-01 8.7e-03  234.97  (*H)  
+        9      1      155  -1.726337e-01  -1.639633e-01 8.7e-03  234.97  (*H)  
+C(  15) (    51)      158  -1.726336e-01  -1.639633e-01 8.7e-03  236.05  22.94  
+C(  16) (    55)      159  -1.726336e-01  -1.639633e-01 8.7e-03  237.27  23.36  
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+C(  17) (    56)      160  -1.726336e-01  -1.639633e-01 8.7e-03  237.97  23.51  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =128000 to 256000 
+
+
+      364    315     3369  -1.724263e-01  -1.717124e-01 7.1e-04  1378.78  1112.50  
+      474    327     4552  -1.724263e-01  -1.717124e-01 7.1e-04  1506.36  1219.03  
+      588    365     5635  -1.724263e-01  -1.717124e-01 7.1e-04  1630.59  1330.65  
+      706    396     6715  -1.724263e-01  -1.717124e-01 7.1e-04  1751.73  1434.94  
+      815    441     7683  -1.724263e-01  -1.717124e-01 7.1e-04  1834.51  1512.42  
+      934    470     8609  -1.724263e-01  -1.717131e-01 7.1e-04  1911.89  1583.69  
+     1249    562    10678  -1.724263e-01  -1.717131e-01 7.1e-04  2195.80  1852.01  
+     1353    595    11603  -1.724263e-01  -1.717131e-01 7.1e-04  2284.09  1931.58  
+     1634    686    13405  -1.724263e-01  -1.717146e-01 7.1e-04  2556.54  2191.75  
+     1804    729    14411  -1.724263e-01  -1.717146e-01 7.1e-04  2685.45  2309.58  
+     1935    756    15356  -1.724263e-01  -1.717146e-01 7.1e-04  2787.87  2399.49  
+     2088    776    16297  -1.724263e-01  -1.717146e-01 7.1e-04  2879.77  2484.58  
+Increase bin node pool size from =32000 to 64000 
+
+
+     2212    799    17140  -1.724263e-01  -1.717184e-01 7.1e-04  2976.54  2573.78  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     2811    933    20475  -1.724263e-01  -1.717306e-01 7.0e-04  3508.25  3092.80  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     3518   1099    23980  -1.724263e-01  -1.717805e-01 6.5e-04  4026.20  3592.66  
+     3638    969    24714  -1.724263e-01  -1.717805e-01 6.5e-04  4081.51  3603.17  
+     3767    988    25614  -1.724263e-01  -1.717805e-01 6.5e-04  4130.36  3629.62  
+Increase bin node pool size from =32000 to 64000 
+
+
+     3904   1002    26565  -1.724263e-01  -1.717805e-01 6.5e-04  4219.07  3708.12  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     4093    990    27490  -1.724263e-01  -1.717805e-01 6.5e-04  4316.63  3801.47  
+Increase bin node pool size from =32000 to 64000 
+
+
+     4245   1017    28520  -1.724263e-01  -1.717805e-01 6.5e-04  4407.69  3875.21  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     4471   1025    29870  -1.724263e-01  -1.717805e-01 6.5e-04  4571.40  4018.00  
+Increase bin node pool size from =32000 to 64000 
+
+
+     4708   1005    31053  -1.724263e-01  -1.717805e-01 6.5e-04  4701.42  4125.92  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+     4901   1020    32190  -1.724263e-01  -1.717805e-01 6.5e-04  4801.21  4204.41  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     5366   1039    34433  -1.724263e-01  -1.717805e-01 6.5e-04  5081.47  4477.22  
+Increase bin node pool size from =32000 to 64000 
+
+
+
+#BRANCHs  #NODEs    #LPs    BEST BOUND      BEST  IP     RGAP    TIME  OPTIME
+(CUTPASS) (NUMCUT)            (SUMFP)                                   (CODE)
+
+     5506   1059    35332  -1.724263e-01  -1.717805e-01 6.5e-04  5156.71  4536.22  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =256000 to 512000 
+
+
+     5649   1075    36291  -1.724260e-01  -1.717805e-01 6.5e-04  5244.81  4609.57  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     6435   1205    40566  -1.724260e-01  -1.717805e-01 6.5e-04  5810.77  5160.25  
+Increase bin node pool size from =32000 to 64000 
+
+
+     6589   1206    41399  -1.724260e-01  -1.717805e-01 6.5e-04  5891.59  5236.41  
+     6933   1259    43520  -1.724260e-01  -1.717805e-01 6.5e-04  6196.78  5536.01  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+     7198   1267    44876  -1.724260e-01  -1.717805e-01 6.5e-04  6354.90  5683.64  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     7815   1369    47941  -1.724260e-01  -1.717805e-01 6.5e-04  6806.57  6128.00  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     8592   1435    51813  -1.724260e-01  -1.717805e-01 6.5e-04  7370.21  6683.18  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+     8980   1479    53694  -1.724260e-01  -1.717805e-01 6.5e-04  7637.73  6947.63  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =32000 to 64000 
+
+
+     9718   1520    56957  -1.724260e-01  -1.717805e-01 6.5e-04  8089.34  7390.54  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+    10119   1595    58715  -1.724260e-01  -1.717805e-01 6.5e-04  8287.80  7555.12  
+    10427   1638    59831  -1.724260e-01  -1.717805e-01 6.5e-04  8392.52  7655.33  
+Increase bin node pool size from =32000 to 64000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase node pool size from =32000 to 64000 
+
+
+    10975   1714    61860  -1.724260e-01  -1.717805e-01 6.5e-04  8648.63  7908.25  
+Increase bin node pool size from =64000 to 128000 
+
+
+    11492   1782    63935  -1.724260e-01  -1.717805e-01 6.5e-04  8929.73  8183.13  
+Increase bin node pool size from =64000 to 128000 
+
+
+Increase bin node pool size from =64000 to 128000 
+
+
+    11668   1804    64460  -1.724260e-01  -1.717805e-01 6.5e-04  9002.39  8254.85  
+
+Parallel MIP workload: 16862584.57 secs
+    0   1   2   3   4   5   6   7   8   9 
+0:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+1:|2%|2%|2%|1%|1%|2%|2%|2%|2%|2%|
+2:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+3:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+4:|2%|2%|2%|2%|2%|2%|2%|2%|2%|2%|
+5:|2%|2%|2%|2%|2%|2%|2%|2%|2%|1%|
+6:|2%|2%|2%|2%|
+
+Feasible solution found
+
+Status                       :                      5
+Objective Value              :        -0.171780483423
+Best Bound                   :        -0.172425993294
+Rel. MIP Gap                 :           6.455099e-04
+Abs. MIP Gap                 :           6.455099e-04
+
+Primal Infeasibility         :           0.000000e+00
+Integer Infeasibility        :           0.000000e+00
+
+Total Branches               :                  11668
+Total LPs Solved             :                  64460
+Simplex Iterations           :                9140557
+Barrier Iterations           :                   7955
+Nonlinear Iterations         :                      0
+Cutting planes applied       :                   1218 (1218)
+    + GUB Covers             :                    932
+    + Lifting                :                     29
+    + Gomory                 :                      6
+    + Coeff. Reduction       :                    195
+    + Clique                 :                     56
+Total Time (sec.)            :                9002.48
+ 
+
+
+Error 2017: Time limit is reached before solving to completion.
+
+Elapsed time : 9005.00 seconds
+
+
+
+Error 2017: Time limit is reached before solving to completion. 
+
